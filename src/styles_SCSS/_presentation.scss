@@ -1,0 +1,373 @@
+.presentation {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    background-color: #d4d2d2c0;
+    opacity: 0;
+    .bloc-de-presentation {
+        width: 100%;
+        height: auto;
+        padding: 20px 20px 20px 0px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+        .icones-reseaux-sociaux {
+            align-self: center;
+            width: 100px;
+            height: 200px;
+            border-radius: 0px 10px 10px 0px;
+            border-top: 1px solid #e6d6ff;
+            border-right: 1px solid #e6d6ff;
+            border-bottom: 1px solid #e6d6ff;
+            box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.507);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(252, 252, 252);
+            i {
+                font-size: 30px;
+                color: black;
+            }
+            #linkedin {
+                color: rgb(28, 126, 255);
+            }
+            #twitter {
+                width: 25px;
+                height: 25px;
+            }
+
+            @media (max-width: 1000px) {
+                width: 50px;
+                height: 100px;
+                i {
+                    font-size: 15px;
+                }
+                #twitter {
+                    width: 12.5px;
+                    height: 12.5px;
+                }
+            }
+            @media (max-width: 448px) {
+                width: 35px;
+                height: 85px;
+                i {
+                    font-size: 13px;
+                }
+                #twitter {
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+        .txt-presentation {
+            width: 100%;
+            padding: 50px 50px 30px 50px;
+            color: rgba(69, 12, 143, 0.788);
+            h1 {
+                display: none;
+            }
+            .txt-presentation-paragraphe-title {
+                width: auto;
+                font-size: 40px;
+                margin-bottom: 20px;
+                text-align: left;
+                font-weight: 800;
+                line-height: 50px;
+                @media (max-width: 1137px) {
+                    font-size: 30px;
+                }
+            }
+            .txt-presentation-paragraphe-title::after {
+                content: "";
+                border: 2px solid rgba(69, 12, 143, 0.788);
+                animation: blink .5s infinite 
+            }
+            
+            p {
+                display: block;
+                width: 100%;
+                text-align: justify;
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 40px;
+                margin-bottom: 50px;
+                @media (max-width: 1137px) {
+                    font-size: 18px;
+                }
+            }
+            a {
+                display: block;
+                width: 250px;
+                height: 50px;
+                @include flexCenter;
+                margin: 0px auto;
+                border: 2px solid rgba(69, 12, 143, 0.788);
+                box-shadow: 2px 2px 5px rgba(69, 12, 143, 0.863);
+                background-color: #fff;
+                font-size: 24px;
+                font-weight: 600;
+                text-align: center;
+                text-decoration: none;
+                color: rgba(69, 12, 143, 0.788);
+                &:hover {
+                    background-color: rgba(69, 12, 143, 0.788);
+                    color: #fff;
+                    border: 2px solid #fff;
+                    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+                }
+            }
+
+            @media (max-width: 1000px) {
+                padding: 25px 25px 15px 25px;
+                h1, .txt-presentation-paragraphe-title {
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+                P {
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                a {
+                    width: 125px;
+                    height: 25px;
+                    font-size: 12px;
+                    border: 1px solid rgba(69, 12, 143, 0.788);
+                    &:hover {
+                        border: 1px solid #fff;
+                    }
+                }
+
+            }
+
+            @media (max-width: 695px) {
+                padding: 15px 15px 5px 15px;
+                h1, .txt-presentation-paragraphe-title {
+                    font-size: 15px;
+                }
+                p {
+                    font-size: 9px;
+                }
+            }
+            @media (max-width: 464px) {
+                padding: 7px 7px 2px 7px;
+            }
+            @media (max-width: 448px) {
+                padding: 5px 5px 0px 5px;
+                h1, .txt-presentation-paragraphe-title {
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+                p {
+                    font-size: 9px;
+                    line-height: 14px;
+                }
+                a {
+                    width: 80px;
+                    height: 18px;
+                    font-size: 9px;
+                    &:hover {
+                        border: 1px solid #fff;
+                    }
+                }
+            }
+
+
+        }
+        .image-presentation-et-background {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .ordi {
+                width: 500px;
+                height: 400px;
+            }
+            .changement-background {
+                height: 40px;
+                width: 90px;
+                margin: 0px auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 30px;
+                background-color: #00000056;
+                margin-top: 20px;
+                position: relative;
+                padding: 0px 10px;
+                cursor: pointer;
+                i {
+                    font-size: 25px;
+                }
+                #sun {
+                    color: #e7eb0b;
+                }
+                #moon {
+                    color: #363636;
+                }
+                .interrupteur-background {
+                    position: absolute;
+                    left: 2px;
+                    z-index: 10;
+                    width: 35px;
+                    height: 35px;
+                    background-color: #ffffff;
+                    border-radius: 9999px;
+                    cursor: pointer;
+                }
+            }
+
+            @media (max-width: 1000px) {
+                .ordi {
+                    width: 250px;
+                    height: 250px;
+                }
+                .changement-background {
+                    width: 56.25px;
+                    height: 25px;
+                    border-radius: 18.5px;
+                    padding: 0px 6.25px;
+                    i {
+                        font-size: 15.625px;
+                    }
+                    .interrupteur-background {
+                        width: 21.875px;
+                        height: 21.875px;
+                    }
+                }
+            }
+
+            @media (max-width: 582px) {
+                .ordi {
+                    width: 125px;
+                    height: 125px;
+                }
+                .changement-background {
+                    width: 33.75px;
+                    height: 15px;
+                    border-radius: 11.25px;
+                    padding: 0px 3.75px;
+                    i {
+                        font-size: 9.375px;
+                    }
+                    .interrupteur-background {
+                        width: 13.125px;
+                        height: 13.125px;
+                    }
+                }
+            }
+
+            @media (max-width: 448px) {
+                .ordi {
+                    width: 90px;
+                    height: 90px;
+                }
+                .changement-background {
+                    width: 22.25px;
+                    height: 10px;
+                    border-radius: 7.5px;
+                    padding: 0px 2px;
+                    i {
+                        font-size: 6.25px;
+                    }
+                    .interrupteur-background {
+                        width: 8.75px;
+                        height: 8.75px;
+                    }
+                }
+            }
+        }
+        @media (max-width: 750px) {
+            margin-top: 50px;
+        }
+        @media (max-width: 565px) {
+            margin-top: 30px;
+        }
+    }
+    .langage {
+        width: 100px;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .Fr, .En {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 1000px) {
+            width: 50px;
+            .Fr, .En {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        @media (max-width: 448px) {
+            width: 40px;
+            .Fr, .En {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+}
+
+.title {
+    display: flex;
+}
+
+.dash {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    height: 40px;
+    width: 5px;
+    margin-left: 10px;
+    background-color: rgba(69, 12, 143, 0.788);;
+    animation: blink .5s infinite 
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.visible, .langage.visible, .changement-background.visible, .icones-reseaux-sociaux.visible, .txt-presentation-paragraphe.visible {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.langage, .changement-background {
+    opacity: 0;
+}
+
+.icones-reseaux-sociaux, .txt-presentation-paragraphe {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.ordi {
+    opacity: 1;
+    transform: translateX(-100px) scale(1) rotate(45deg);
+}
+
+.ordi.visible {
+    opacity: 1;
+    transform: translateX(0) scale(1) rotate(0);
+    transition: all 2s cubic-bezier(0.5, 0, 0, 1);
+}
+
+
+

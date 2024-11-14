@@ -1,0 +1,164 @@
+.error {
+    height: auto;
+    width: 100%;
+    background-color: #d4d2d2c0;
+    background-image: url('../assets/prises.webp');
+    background-repeat: round;
+    opacity: 0;
+    .container {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto auto auto;
+        margin: 70px auto 0px auto;
+        .oups {
+            width: 350px;
+            height: 350px;
+            margin-left: 20px;
+            @media (max-width: 1195px) {
+                width: 250px;
+                height: 250px;
+                margin-left: 10px;                   
+            }
+            @media (max-width: 655px) {
+                width: 125px;
+                height: 125px;
+                margin-left: 5px;                   
+            }
+            @media (max-width: 352px) {
+                width: 62.5px;
+                height: 62.5px;
+                margin-left: 5px;                   
+            }
+        }
+        .txt {
+            width: auto;
+            height: 100%;
+            text-align: center;
+            h2 {
+                font-size: 200px;
+                font-weight: 900;
+                color: #8900ae;
+                @media (max-width: 1195px) {
+                    font-size: 100px;
+                    font-weight: 450;         
+                }
+                @media (max-width: 655px) {
+                    font-size: 75px;
+                    font-weight: 338;         
+                }
+                @media (max-width: 352px) {
+                    font-size: 50px;
+                    font-weight: 250;         
+                }
+            }
+            P {
+                font-size: 40px;
+                font-weight: 500;
+                color: #8900ae;
+                text-wrap: nowrap;
+                @media (max-width: 1195px) {
+                    font-size: 20px;
+                    font-weight: 250;         
+                }
+                @media (max-width: 655px) {
+                    font-size: 13px;
+                    font-weight: 163;         
+                }
+                @media (max-width: 352px) {
+                    font-size: 9px;
+                    font-weight: 130;         
+                }
+            }
+        }
+        .robot {
+            width: 380px;
+            height: 700px;
+            grid-row: 1 / 4;
+            grid-column: 3 / 4;
+            @media (max-width: 1195px) {
+                width: 280px;
+                height: 600px;              
+            }
+            @media (max-width: 755px) {
+                width: 180px;
+                height: 500px;              
+            }
+            @media (max-width: 655px) {
+                width: 80px;
+                height: 222.22px;              
+            }
+            @media (max-width: 352px) {
+                width: 50px;
+                height: 138.8px;              
+            }
+        }
+        .home {
+            width: 200px;
+            height: 50px;
+            @include flexCenter;
+            grid-row: 2 / 3;
+            grid-column: 2 / 3;
+            text-decoration: none;
+            text-align: center;
+            color: #8900ae;
+            font-size: 30px;
+            font-weight: 700;
+            background-color: rgb(255, 255, 255);
+            border: 3px solid #8900ae;
+            border-radius: 7px;
+            margin: 50px auto 0px auto;
+            background-color: #fdf7ff;
+            box-shadow: 0px 0px 2px #8900ae;
+            &:hover {
+                color: #009830;
+                border: 3px solid #009830;
+                background-color: #f7fffa;
+                box-shadow: 0px 0px 2px #009830;
+            }
+            @media (max-width: 1195px) {
+                width: 100px;
+                height: 25px; 
+                font-size: 15px;
+                font-weight: 300;        
+            }
+        }
+    }
+}
+
+.visible-error {
+    opacity: 1;
+    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.oups.visible-error, .txt-h2.visible-error, .txt-p.visible-error, .robot.visible-error, .home.visible-error {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.oups, .txt-h2, .txt-p, .robot, .home {
+    opacity: 0;
+    transform: translateY(30px);
+}
+.oups.visible-error {
+    transition-delay: 0.5s;
+}
+.txt-h2.visible-error {
+    transition-delay: 1s;
+}
+.txt-p.visible-error {
+    transition-delay: 1.5s;
+}
+.home.visible-error {
+    transition-delay: 2s;
+}
+
+.home.visible-error.transition {
+    transition-delay: 0s;
+}
+.robot.visible-error {
+    transition-delay: 2.5s;
+}
+

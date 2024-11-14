@@ -1,0 +1,170 @@
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFF;
+    z-index: 1000;
+    border-bottom: 2px solid rgb(33, 0, 59);
+    opacity: 0;
+    transform: translateY(-10px);
+    .photo-et-nom {
+        display: flex;
+        width: 310px;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 0px 0px 20px;
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 999px;
+        }
+        p {
+            color: #1F1F1F;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+    nav {
+        height: 100%;
+        width: auto;
+        @include flexCenter;
+        margin-right: 20px;
+        .navigation {
+            width: 100px;
+            height: 30px;
+            @include flexCenter;
+            text-decoration: none;
+            text-align: center;
+            color: #1F1F1F;
+            font-weight: bold;
+            font-size: 14px;
+            background-image: linear-gradient(90deg, transparent 50%, rgb(69, 12, 143, 0.788) 50%, rgb(205, 172, 252) 100%);
+            background-size: 200%;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .navigation:hover {
+            color: #fff;
+            background-position: -100%;
+            border: rgba(69, 12, 143, 0.788) solid 1px;
+        }
+    }
+    .menu-hamburger {
+        width: 22px;
+        height: 22px;
+        @include flexCenter;
+        padding: 3px 3px;
+        display: none;
+        i {
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .photo-et-nom {
+            width: auto;
+            p {
+                font-size: 11px;
+                margin-left: 20px;
+            }
+        }
+        nav {
+            .navigation {
+                width: 75px;
+                font-size: 11px;
+            }
+        }
+    }
+
+    @media (max-width: 750px) {
+        height: 50px;
+        .photo-et-nom {
+            margin-left: 12px;
+            p {
+                font-size: 9px;
+                margin-left: 15px;
+            }
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        nav {
+            margin-right: 10px;
+            .navigation {
+                width: 50px;
+                font-size: 9px;
+            }
+        }
+    }
+
+    @media (max-width: 565px) {
+        height: 30px;
+        .photo-et-nom {
+            width: auto;
+            margin-left: 8px;
+            p {
+                font-size: 8px;
+                margin-left: 12px;
+            }
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        nav {
+            margin-right: 7px;
+            .navigation {
+                margin-left: 15px;
+                width: 30px;
+                font-size: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 470px) {
+        .photo-et-nom {
+            p {
+                font-size: 9px;
+            }
+        }
+        nav {
+            display: none;
+            width: 30%;
+            position: absolute;
+            top: 30px;
+            left: 70%;
+            flex-direction: column;
+            height: auto;
+            background-color: white;
+            box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.285);
+            .navigation {
+                height: 25px;
+                border-bottom: 1.5px solid rgb(33, 0, 59);
+                width: 100%;
+                margin-left: 0px;
+            }
+        }
+        nav.active {
+            display: block;
+        }
+        .menu-hamburger {
+            display: flex;
+        }
+    }
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+}

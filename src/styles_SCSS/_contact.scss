@@ -1,0 +1,282 @@
+.contact {
+    width: 100%;
+    background-color: #d4d2d2c0;
+    @include flexCenter;
+    flex-direction: column;
+    padding: 0px 20px;
+    opacity: 0;
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 7000;
+        color: rgba(69, 12, 143, 0.788);
+    }
+    .ligne {
+        height: 1px;
+        width: 210px;
+        background: rgba(69, 12, 143, 0.788);;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        border-radius: 999px;
+        &:nth-child(2) {
+            margin-bottom: 30px;
+            height: 4px;
+            width: 70px;
+        }
+    }
+    p {
+        max-width: 900px;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 30px;
+        line-height: 35px;
+        color: rgb(69, 12, 143, 0.788);
+    }
+    h3 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: rgba(69, 12, 143, 0.788);
+        &:nth-child(8) {
+            margin-bottom: 50px;
+        }
+    }
+    a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        max-width: 650px;
+        height: auto;
+        margin-bottom: 60px;
+        .adresse-mail {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            p {
+                margin-bottom: 0px;
+                font-size: 23px;
+                color: rgb(67, 1, 153);
+            }
+            i {
+                font-size: 35px;
+                color: rgb(67, 1, 153);
+            }
+            &:hover {
+                background-color: rgba(121, 121, 121, 0.685);
+            }
+        }
+    }
+    .formulaire {
+        width: 100%;
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        background-color: rgb(255, 255, 255);
+        padding: 60px 60px;
+        box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.37);
+        border-radius: 15px;
+        .label-et-input {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            label {
+                font-size: 17px;
+                font-weight: 700;
+                text-align: left;
+                margin-bottom: 17px;
+                color: rgba(69, 12, 143, 0.788);
+            }
+            input {
+                height: 57px;
+                width: 100%;
+                padding: 10px 15px;
+                font-size: 22px;
+                font-weight: 400;
+                border: none;
+                border-radius: 7px;
+                font-family: "Geologica", serif;
+                background-color: rgb(231, 231, 231);
+                color: rgba(69, 12, 143, 0.788);
+                &::placeholder {
+                    color: rgba(69, 12, 143, 0.459);
+                }
+                &:focus {
+                    outline-color: #6f00ffa8;
+                }
+            }
+            textarea {
+                height: 250px;
+                width: 100%;
+                padding: 10px 15px;
+                font-size: 22px;
+                font-weight: 400;
+                border: none;
+                border-radius: 7px;
+                background-color: rgb(231, 231, 231);
+                color: rgba(69, 12, 143, 0.788);
+                &::placeholder {
+                    color: rgba(69, 12, 143, 0.459);
+                }
+                &:focus {
+                    outline-color: #6f00ffa8;
+                }
+            }
+        }
+        #submit {
+            width: 100%;
+            max-width: 300px;
+            margin-top: 20px;
+            height: 50px;
+            font-size: 23px;
+            font-weight: 700;
+            border: none;
+            background-color: #adadad;
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 10px;
+            font-family: "Geologica", serif;
+            color: #37007a;
+            &:hover {
+                background-color: #6f00ff;
+                color: white;
+            }
+        }
+    }
+
+    @media (max-width: 725px) {
+        h2 {
+            font-size: 25px;
+            font-weight: 700;
+        }
+        .ligne {
+            width: 170px;
+            margin-bottom: 15px;
+            margin-top: 7px;
+            &:nth-child(2) {
+                margin-bottom: 20px;
+                height: 3px;
+                width: 40px;
+            }
+        }
+        p {
+            max-width: 500px;
+            font-size: 12px;
+            margin-bottom: 20px;
+            line-height: 20px;
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            &:nth-child(8) {
+                margin-bottom: 30px;
+            }
+        }
+        a {
+            max-width: 400px;
+            margin-bottom: 40px;
+            .adresse-mail {
+                padding: 5px 5px;
+                border-radius: 7px;
+                cursor: pointer;
+                p {
+                    font-size: 15px;
+                }
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+        .formulaire {
+            max-width: 550px;
+            gap: 15px;
+            padding: 40px 40px;
+            box-shadow: 0px 0px 5px rgba(10, 10, 10, 0.37);
+            border-radius: 8px;
+            .label-et-input {
+                label {
+                    font-size: 13px;
+                    margin-bottom: 10px;
+                }
+                input {
+                    height: 37px;
+                    padding: 7px 8px;
+                    font-size: 16px;
+                    border-radius: 4px;
+                }
+                textarea {
+                    height: 100px;
+                    padding: 7px 9px;
+                    font-size: 16px;
+                    border-radius: 4px;
+                }
+            }
+            #submit {
+                max-width: 100px;
+                margin-top: 10px;
+                height: 25px;
+                font-size: 13px;
+                border-radius: 7px;
+            }
+        }
+    }
+
+    @media (max-width: 390px) {
+        .formulaire {
+            padding: 20px 20px;
+            border-radius: 4px;
+            .label-et-input {
+                label {
+                    font-size: 10px;
+                    margin-bottom: 7px;
+                }
+                input {
+                    height: 32px;
+                    padding: 4px 5px;
+                    font-size: 12px;
+                    border-radius: 2px;
+                }
+                textarea {
+                    padding: 4px 6px;
+                    font-size: 12px;
+                    border-radius: 2px;
+                }
+            }
+            #submit {
+                max-width: 100px;
+                margin-top: 10px;
+                height: 25px;
+                font-size: 13px;
+                border-radius: 7px;
+            }
+        }
+    }
+}
+
+
+.visible-contact {
+    opacity: 1;
+}
+
+.title-contact-h2.visible-contact, .ligne-contact1.visible-contact, .paragraphe-contact-p.visible-contact, .ligne-contact2.visible-contact, .my-mail-title.visible-contact, .my-mail-copie.visible-contact, .ligne-important.visible-contact, .title-form.visible-contact, .formulaire.visible-contact {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.title-contact-h2, .ligne-contact1, .paragraphe-contact-p, .ligne-contact2, .my-mail-title, .my-mail-copie, .ligne-important, .title-form, .formulaire {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+

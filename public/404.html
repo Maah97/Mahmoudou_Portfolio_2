@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon2.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="web developer full-stack portfolio"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Error | Mahmoudou | Fullstack developper | Portfolio</title>
+    <style>
+        .error {
+          height: auto;
+          width: 100%;
+          background-color: rgba(212, 210, 210, 0.7529411765);
+          background-image: url("prises.webp");
+          background-repeat: round;
+          opacity: 1;
+        }
+        .error .container {
+          width: 100%;
+          height: auto;
+          display: grid;
+          grid-template-columns: 1fr 2fr 1fr;
+          grid-template-rows: auto auto auto;
+          margin: 70px auto 0px auto;
+        }
+        .error .container .oups {
+          width: 350px;
+          height: 350px;
+          margin-left: 20px;
+        }
+        @media (max-width: 1195px) {
+          .error .container .oups {
+            width: 250px;
+            height: 250px;
+            margin-left: 10px;
+          }
+        }
+        @media (max-width: 655px) {
+          .error .container .oups {
+            width: 125px;
+            height: 125px;
+            margin-left: 5px;
+          }
+        }
+        @media (max-width: 352px) {
+          .error .container .oups {
+            width: 62.5px;
+            height: 62.5px;
+            margin-left: 5px;
+          }
+        }
+        .error .container .txt {
+          width: auto;
+          height: 100%;
+          text-align: center;
+        }
+        .error .container .txt h2 {
+          font-size: 200px;
+          font-weight: 900;
+          color: #8900ae;
+        }
+        @media (max-width: 1195px) {
+          .error .container .txt h2 {
+            font-size: 100px;
+            font-weight: 450;
+          }
+        }
+        @media (max-width: 655px) {
+          .error .container .txt h2 {
+            font-size: 75px;
+            font-weight: 338;
+          }
+        }
+        @media (max-width: 352px) {
+          .error .container .txt h2 {
+            font-size: 50px;
+            font-weight: 250;
+          }
+        }
+        .error .container .txt P {
+          font-size: 40px;
+          font-weight: 500;
+          color: #8900ae;
+          text-wrap: nowrap;
+        }
+        @media (max-width: 1195px) {
+          .error .container .txt P {
+            font-size: 20px;
+            font-weight: 250;
+          }
+        }
+        @media (max-width: 655px) {
+          .error .container .txt P {
+            font-size: 13px;
+            font-weight: 163;
+          }
+        }
+        @media (max-width: 352px) {
+          .error .container .txt P {
+            font-size: 9px;
+            font-weight: 130;
+          }
+        }
+        .error .container .robot {
+          width: 380px;
+          height: 700px;
+          grid-row: 1/4;
+          grid-column: 3/4;
+        }
+        @media (max-width: 1195px) {
+          .error .container .robot {
+            width: 280px;
+            height: 600px;
+          }
+        }
+        @media (max-width: 755px) {
+          .error .container .robot {
+            width: 180px;
+            height: 500px;
+          }
+        }
+        @media (max-width: 655px) {
+          .error .container .robot {
+            width: 80px;
+            height: 222.22px;
+          }
+        }
+        @media (max-width: 352px) {
+          .error .container .robot {
+            width: 50px;
+            height: 138.8px;
+          }
+        }
+        .error .container .home {
+          width: 200px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          grid-row: 2/3;
+          grid-column: 2/3;
+          text-decoration: none;
+          text-align: center;
+          color: #8900ae;
+          font-size: 30px;
+          font-weight: 700;
+          background-color: rgb(255, 255, 255);
+          border: 3px solid #8900ae;
+          border-radius: 7px;
+          margin: 50px auto 0px auto;
+          background-color: #fdf7ff;
+          box-shadow: 0px 0px 2px #8900ae;
+        }
+        .error .container .home:hover {
+          color: #009830;
+          border: 3px solid #009830;
+          background-color: #f7fffa;
+          box-shadow: 0px 0px 2px #009830;
+        }
+        @media (max-width: 1195px) {
+          .error .container .home {
+            width: 100px;
+            height: 25px;
+            font-size: 15px;
+            font-weight: 300;
+          }
+        }
+
+        .visible-error {
+          opacity: 1;
+          transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .oups.visible-error, .txt-h2.visible-error, .txt-p.visible-error, .robot.visible-error, .home.visible-error {
+          opacity: 1;
+          transform: translateY(0px);
+          transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+        }
+
+        .oups, .txt-h2, .txt-p, .robot, .home {
+          opacity: 1;
+          transform: translateY(30px);
+        }
+
+        .oups.visible-error {
+          transition-delay: 0.5s;
+        }
+
+        .txt-h2.visible-error {
+          transition-delay: 1s;
+        }
+
+        .txt-p.visible-error {
+          transition-delay: 1.5s;
+        }
+
+        .home.visible-error {
+          transition-delay: 2s;
+        }
+
+        .home.visible-error.transition {
+          transition-delay: 0s;
+        }
+
+        .robot.visible-error {
+          transition-delay: 2.5s;
+        }
+
+        *, ::before, ::after {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          width: 100%;
+          font-family: "Geologica", sans-serif;
+        }
+
+        #root {
+          width: 100%;
+        }
+        header {
+          width: 100%;
+          height: 70px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: #FFF;
+          z-index: 1000;
+          border-bottom: 2px solid rgb(33, 0, 59);
+        }
+        header .photo-et-nom {
+          display: flex;
+          width: 310px;
+          height: 100%;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0px 0px 0px 20px;
+        }
+        header .photo-et-nom img {
+          width: 40px;
+          height: 40px;
+          border-radius: 999px;
+        }
+        header .photo-et-nom p {
+          color: #1F1F1F;
+          font-weight: bold;
+          font-size: 14px;
+          cursor: pointer;
+        }
+        header nav {
+          height: 100%;
+          width: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 20px;
+        }
+        header nav .navigation {
+          width: 100px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          text-align: center;
+          color: #1F1F1F;
+          font-weight: bold;
+          font-size: 14px;
+          background-image: linear-gradient(90deg, transparent 50%, rgba(69, 12, 143, 0.788) 50%, rgb(205, 172, 252) 100%);
+          background-size: 200%;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+        }
+        header nav .navigation:hover {
+          color: #fff;
+          background-position: -100%;
+          border: rgba(69, 12, 143, 0.788) solid 1px;
+        }
+        header .menu-hamburger {
+          width: 22px;
+          height: 22px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 3px 3px;
+          display: none;
+        }
+        header .menu-hamburger i {
+          font-size: 15px;
+        }
+        @media (max-width: 1000px) {
+          header .photo-et-nom {
+            width: auto;
+          }
+          header .photo-et-nom p {
+            font-size: 11px;
+            margin-left: 20px;
+          }
+          header nav .navigation {
+            width: 75px;
+            font-size: 11px;
+          }
+        }
+        @media (max-width: 750px) {
+          header {
+            height: 50px;
+          }
+          header .photo-et-nom {
+            margin-left: 12px;
+          }
+          header .photo-et-nom p {
+            font-size: 9px;
+            margin-left: 15px;
+          }
+          header .photo-et-nom img {
+            width: 30px;
+            height: 30px;
+          }
+          header nav {
+            margin-right: 10px;
+          }
+          header nav .navigation {
+            width: 50px;
+            font-size: 9px;
+          }
+        }
+        @media (max-width: 565px) {
+          header {
+            height: 30px;
+          }
+          header .photo-et-nom {
+            width: auto;
+            margin-left: 8px;
+          }
+          header .photo-et-nom p {
+            font-size: 8px;
+            margin-left: 12px;
+          }
+          header .photo-et-nom img {
+            width: 20px;
+            height: 20px;
+          }
+          header nav {
+            margin-right: 7px;
+          }
+          header nav .navigation {
+            margin-left: 15px;
+            width: 30px;
+            font-size: 8px;
+          }
+        }
+        @media (max-width: 470px) {
+          header .photo-et-nom p {
+            font-size: 9px;
+          }
+          header nav {
+            display: none;
+            width: 30%;
+            position: absolute;
+            top: 30px;
+            left: 70%;
+            flex-direction: column;
+            height: auto;
+            background-color: white;
+            box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.285);
+          }
+          header nav .navigation {
+            height: 25px;
+            border-bottom: 1.5px solid rgb(33, 0, 59);
+            width: 100%;
+            margin-left: 0px;
+          }
+          header nav.active {
+            display: block;
+          }
+          header .menu-hamburger {
+            display: flex;
+          }
+        }
+        footer {
+          width: 100%;
+          background-color: #1d1d1d;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          gap: 30px 30px;
+          padding: 0px 0px 70px 0px;
+        }
+        footer .svg-curve {
+          fill: none;
+          width: 100%;
+          display: block;
+        }
+        footer .svg-curve path {
+          fill: rgb(255, 255, 255);
+        }
+        footer .contact-reseaux {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          max-width: 300px;
+        }
+        footer .contact-reseaux a {
+          display: block;
+          border: 2px solid white;
+          padding: 10px;
+          border-radius: 999px;
+        }
+        footer .contact-reseaux a:hover {
+          background: rgba(143, 111, 255, 0.712);
+          border-color: rgba(143, 111, 255, 0.712);
+        }
+        footer .contact-reseaux a i {
+          font-size: 25px;
+          color: rgba(255, 255, 255, 0.829);
+        }
+        footer .contact-reseaux a img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 23px;
+          height: 23px;
+        }
+        footer p {
+          color: rgba(255, 255, 255, 0.829);
+          font-size: 18px;
+        }
+        @media (max-width: 725px) {
+          footer {
+            gap: 15px 15px;
+            padding: 0px 0px 40px 0px;
+          }
+          footer .contact-reseaux {
+            max-width: 200px;
+          }
+          footer .contact-reseaux a {
+            border: 1px solid white;
+            padding: 7px;
+          }
+          footer .contact-reseaux a i {
+            font-size: 20px;
+          }
+          footer .contact-reseaux a img {
+            width: 19px;
+            height: 19px;
+          }
+          footer p {
+            font-size: 12px;
+          }
+        }
+        @media (max-width: 380px) {
+          footer {
+            gap: 10px 10px;
+            padding: 0px 0px 30px 0px;
+          }
+          footer .contact-reseaux {
+            max-width: 150px;
+          }
+          footer .contact-reseaux a {
+            border: 1px solid white;
+            padding: 4px;
+          }
+          footer .contact-reseaux a i {
+            font-size: 18px;
+          }
+          footer .contact-reseaux a img {
+            width: 18px;
+            height: 18px;
+          }
+          footer p {
+            font-size: 9px;
+          }
+        }
+        footer #curve path {
+          fill: rgb(255, 255, 255);
+        }
+    </style>
+     <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with only a query string and hash fragment,
+      // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
+      // https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
+      // Note: this 404.html file must be at least 512 bytes for it to work
+      // with Internet Explorer (it is currently > 512 bytes)
+
+      // If you're creating a Project Pages site and NOT using a custom domain,
+      // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
+      // This way the code will only replace the route part of the path, and not
+      // the real directory in which the app resides, for example:
+      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
+      // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
+      // Otherwise, leave pathSegmentsToKeep as 0.
+      var pathSegmentsToKeep = 1;
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+    <header>
+        <div class="photo-et-nom">
+            <img src="Photo-profil.webp" alt="profil" />
+            <p>MAHMOUDOU ABDOUL NGANIYYOU</p>
+        </div>
+        <nav>
+            <a class="navigation" href="https://maah97.github.io/Mahmoudou_Portfolio/">HOME</a>
+        </nav>
+        <div class="menu-hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <section class="error">
+        <div class='container'>
+            <img class="oups" src="oups.webp" alt="Oups !!" />
+            <div class="txt">
+                <h2 class="txt-h2">404</h2>
+                <p class="txt-p">Sorry, page not found !</p>
+            </div>
+            <img class="robot" src="robot.webp" alt="Oups Robot avec une loupe !!" />
+            <a class="home" href="https://maah97.github.io/Mahmoudou_Portfolio/">GO HOME</a>
+        </div>
+    </section>
+    <footer>
+      <svg class="svg-curve svg-curve-footer" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-100 79C-100 79 218.416 23.165 693.5 23.165C1168.58 23.165 1487 79 1487 79V0H-100V79Z"></path>
+      </svg>
+      <div class="contact-reseaux">
+          <a href="mailto:mahmoudouaboul@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="https://linkedin.com/in/mahmoudou-abdoul-nganiyyou-2b805a180" rel='noreferrer' target='_blank'>
+              <i id='linkedin' class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/Maah97" rel='noreferrer' target='_blank'>
+              <i id='github' class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://x.com/mahmoudouabdoul" id='ImgTwitter' rel='noreferrer' target='_blank'>
+              <img id='twitter' src="logo-twitter.svg" alt="X anciennement twitter" />
+          </a>
+      </div>
+      <p class="droit-reserve">
+      </p>
+    </footer>
+  </body>
+  <script defer>
+    const date = new Date();
+    const year = date.getFullYear();
+    const copyRight = document.querySelector('.droit-reserve');
+    copyRight.innerHTML = `<i class="fa-regular fa-copyright"></i> ${year} Mahmoudou Abdoul Nganiyyou, all rights reserved`
+  </script>
+</html>

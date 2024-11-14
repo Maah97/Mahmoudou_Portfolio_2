@@ -1,0 +1,120 @@
+footer {
+    width: 100%;
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px 30px;
+    padding: 0px 0px 70px 0px;
+    opacity: 0;
+    .svg-curve {
+        fill: none;
+        width: 100%;
+        display: block;
+        path {
+            fill: rgba(222, 222, 222);
+        }
+    }
+    .contact-reseaux {
+        @include flexCenter;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 300px;
+        a {
+            display: block;
+            border: 2px solid white;
+            padding: 10px;
+            border-radius: 999px;
+            &:hover {
+                background: rgba(143, 111, 255, 0.712);
+                border-color: rgba(143, 111, 255, 0.712);
+            }
+            i {
+                font-size: 25px;
+                color: rgba(255, 255, 255, 0.829);
+            }
+            img {
+                @include flexCenter;
+                width: 23px;
+                height: 23px;
+            }
+        }
+    }
+    p {
+        color: rgba(255, 255, 255, 0.829);
+        font-size: 18px;
+    }
+
+    @media (max-width: 725px) {
+        gap: 15px 15px;
+        padding: 0px 0px 40px 0px;
+        .contact-reseaux {
+            max-width: 200px;
+            a {
+                border: 1px solid white;
+                padding: 7px;
+                i {
+                    font-size: 20px;
+                }
+                img {
+                    width: 19px;
+                    height: 19px;
+                }
+            }
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 380px) {
+        gap: 10px 10px;
+        padding: 0px 0px 30px 0px;
+        .contact-reseaux {
+            max-width: 150px;
+            a {
+                border: 1px solid white;
+                padding: 4px;
+                i {
+                    font-size: 18px;
+                }
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+        p {
+            font-size: 9px;
+        }
+    }
+}
+
+.visible-footer {
+    opacity: 1;
+}
+
+.svg-curve-footer {
+    opacity: 0;
+}
+
+.svg-curve-footer.visible-footer {
+    opacity: 1;
+}
+
+.contact-reseaux {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.droit-reserve {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.contact-reseaux.visible-footer, .droit-reserve.visible-footer {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+}
