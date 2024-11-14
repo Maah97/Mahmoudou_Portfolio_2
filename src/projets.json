@@ -15,19 +15,19 @@
             "css3"
         ],
         "description": "In this project we are responsible for creating the homepage of a travel agency Booki that will allow users to find accommodation and activities in the city of their choice. This page is responsive and must adapt to different screens (Desktop, tablet and phone) The integration of the site interface is done with HTML and CSS code.",
-        "cover": "/Mahmoudou_Portfolio/assets/images_booki/cover_projet_1.webp",
+        "cover": "/assets/images_booki/cover_projet_1.webp",
         "pictures": [
-            "/Mahmoudou_Portfolio/assets/images_booki/cover_projet_2.webp",
-            "/Mahmoudou_Portfolio/assets/images_booki/Desktop.webp",
-            "/Mahmoudou_Portfolio/assets/images_booki/img.webp",
-            "/Mahmoudou_Portfolio/assets/images_booki/img1.webp",
-            "/Mahmoudou_Portfolio/assets/images_booki/img2.webp",
-            "/Mahmoudou_Portfolio/assets/images_booki/img3.webp",
-            "/Mahmoudou_Portfolio/assets/images_booki/img4.webp",
-            "/Mahmoudou_Portfolio/assets/images_booki/img5.webp",
-            "/Mahmoudou_Portfolio/assets/images_booki/img6.webp",
-            "/Mahmoudou_Portfolio/assets/images_booki/img7.webp",
-            "/Mahmoudou_Portfolio/assets/images_booki/img8.webp"
+            "/assets/images_booki/cover_projet_2.webp",
+            "/assets/images_booki/Desktop.webp",
+            "/assets/images_booki/img.webp",
+            "/assets/images_booki/img1.webp",
+            "/assets/images_booki/img2.webp",
+            "/assets/images_booki/img3.webp",
+            "/assets/images_booki/img4.webp",
+            "/assets/images_booki/img5.webp",
+            "/assets/images_booki/img6.webp",
+            "/assets/images_booki/img7.webp",
+            "/assets/images_booki/img8.webp"
         ]
     },
 
@@ -48,17 +48,17 @@
             "js"
         ],
         "description": "We are tasked for this project with finalizing the front end of the portfolio site of an interior architect named Sophie BLuel. In this project, we used JavaScript to make the site dynamic by making API calls to retrieve and transmit data. We also implemented a login system that saves the authentication token if Sophie is logged in by changing the appearance of the site and giving her the ability to add or remove projects from the site.",
-        "cover": "/Mahmoudou_Portfolio/assets/images_sophie/imgCoverSophie.webp",
+        "cover": "/assets/images_sophie/imgCoverSophie.webp",
         "pictures": [
-            "/Mahmoudou_Portfolio/assets/images_sophie/imgCoverSophie1.webp",
-            "/Mahmoudou_Portfolio/assets/images_sophie/imgSophie.webp",
-            "/Mahmoudou_Portfolio/assets/images_sophie/imgSophie1.webp",
-            "/Mahmoudou_Portfolio/assets/images_sophie/imgSophie2.webp",
-            "/Mahmoudou_Portfolio/assets/images_sophie/imgSophie3.webp",
-            "/Mahmoudou_Portfolio/assets/images_sophie/imgSophie4.webp",
-            "/Mahmoudou_Portfolio/assets/images_sophie/imgSophie5.webp",
-            "/Mahmoudou_Portfolio/assets/images_sophie/imgSophie6.webp",
-            "/Mahmoudou_Portfolio/assets/images_sophie/imgSophie7.webp"
+            "/assets/images_sophie/imgCoverSophie1.webp",
+            "/assets/images_sophie/imgSophie.webp",
+            "/assets/images_sophie/imgSophie1.webp",
+            "/assets/images_sophie/imgSophie2.webp",
+            "/assets/images_sophie/imgSophie3.webp",
+            "/assets/images_sophie/imgSophie4.webp",
+            "/assets/images_sophie/imgSophie5.webp",
+            "/assets/images_sophie/imgSophie6.webp",
+            "/assets/images_sophie/imgSophie7.webp"
         ]
     },
 
@@ -77,13 +77,13 @@
             "Lighthouse"
         ],
         "description": "In this project, we improved the SEO performance of a photographer's portfolio site to increase the loading speed of the site and its natural referencing in order to appear in the first results of Google. We also corrected some bugs related to the operation of the site but also some accessibility problems so that the site is readable and accessible for all types of users, even those with disabilities.",
-        "cover": "/Mahmoudou_Portfolio/assets/images_Nina/imgCover.webp",
+        "cover": "/assets/images_Nina/imgCover.webp",
         "pictures": [
-            "/Mahmoudou_Portfolio/assets/images_Nina/imgCover1.webp",
-            "/Mahmoudou_Portfolio/assets/images_Nina/imgNina1.webp",
-            "/Mahmoudou_Portfolio/assets/images_Nina/imgNina2.webp",
-            "/Mahmoudou_Portfolio/assets/images_Nina/imgNina3.webp",
-            "/Mahmoudou_Portfolio/assets/images_Nina/imgNina4.webp"
+            "/assets/images_Nina/imgCover1.webp",
+            "/assets/images_Nina/imgNina1.webp",
+            "/assets/images_Nina/imgNina2.webp",
+            "/assets/images_Nina/imgNina3.webp",
+            "/assets/images_Nina/imgNina4.webp"
         ]
     },
 
@@ -103,14 +103,14 @@
             "sass"
         ],
         "description": "Kasa is a peer-to-peer apartment rental company that wanted to create a react web application for their site to present the accommodations and their user ratings. We implemented the React project and developed the entire application, React components, React Router routes, following the Figma mockups (responsive!). We used Sass which is the CSS preprocessor to code the style of the application components",
-        "cover": "/Mahmoudou_Portfolio/assets/images_kasa/imgCoverKasa.webp",
+        "cover": "/assets/images_kasa/imgCoverKasa.webp",
         "pictures": [
-            "/Mahmoudou_Portfolio/assets/images_kasa/imgCoverKasa1.webp",
-            "/Mahmoudou_Portfolio/assets/images_kasa/imgKasa1.webp",
-            "/Mahmoudou_Portfolio/assets/images_kasa/imgKasa2.webp",
-            "/Mahmoudou_Portfolio/assets/images_kasa/imgKasa3.webp",
-            "/Mahmoudou_Portfolio/assets/images_kasa/imgKasa4.webp",
-            "/Mahmoudou_Portfolio/assets/images_kasa/imgKasa5.webp"
+            "/assets/images_kasa/imgCoverKasa1.webp",
+            "/assets/images_kasa/imgKasa1.webp",
+            "/assets/images_kasa/imgKasa2.webp",
+            "/assets/images_kasa/imgKasa3.webp",
+            "/assets/images_kasa/imgKasa4.webp",
+            "/assets/images_kasa/imgKasa5.webp"
         ]
     },
 
@@ -130,14 +130,14 @@
             "MongoDB"
         ],
         "description": "In this project, we developed the backend of a book rating site for a bookstore. We implemented all the API routes by respecting a well-defined specification beforehand using NodeJS for the API programming and MongoDB for the database. The BackEnd allows the user to create an account, log in, add, modify or delete a book. Security is also taken into account in this project through the use of authentication tokens.",
-        "cover": "/Mahmoudou_Portfolio/assets/images_livres/imgCoverLivre.webp",
+        "cover": "/assets/images_livres/imgCoverLivre.webp",
         "pictures": [
-            "/Mahmoudou_Portfolio/assets/images_livres/imgCoverLivre1.webp",
-            "/Mahmoudou_Portfolio/assets/images_livres/imgLivre.webp",
-            "/Mahmoudou_Portfolio/assets/images_livres/imgLivre1.webp",
-            "/Mahmoudou_Portfolio/assets/images_livres/imgLivre2.webp",
-            "/Mahmoudou_Portfolio/assets/images_livres/imgLivre3.webp",
-            "/Mahmoudou_Portfolio/assets/images_livres/imgLivre4.webp"
+            "/assets/images_livres/imgCoverLivre1.webp",
+            "/assets/images_livres/imgLivre.webp",
+            "/assets/images_livres/imgLivre1.webp",
+            "/assets/images_livres/imgLivre2.webp",
+            "/assets/images_livres/imgLivre3.webp",
+            "/assets/images_livres/imgLivre4.webp"
         ]
     },
 
@@ -159,16 +159,16 @@
         "cover": "/assets/images_qwenta/imgCoverQwenta.webp",
         "pictures": [
             "/assets/images_qwenta/imgCoverQwenta1.webp",
-            "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta.webp",
-            "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta1.webp",
-            "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta2.webp",
-            "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta3.webp",
-            "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta4.webp",
-            "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta5.webp",
-            "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta6.webp",
-            "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta7.webp",
-            "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta8.webp",
-            "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta9.webp"
+            "/assets/images_qwenta/imgQwenta.webp",
+            "/assets/images_qwenta/imgQwenta1.webp",
+            "/assets/images_qwenta/imgQwenta2.webp",
+            "/assets/images_qwenta/imgQwenta3.webp",
+            "/assets/images_qwenta/imgQwenta4.webp",
+            "/assets/images_qwenta/imgQwenta5.webp",
+            "/assets/images_qwenta/imgQwenta6.webp",
+            "/assets/images_qwenta/imgQwenta7.webp",
+            "/assets/images_qwenta/imgQwenta8.webp",
+            "/assets/images_qwenta/imgQwenta9.webp"
         ]
     }
 ]
