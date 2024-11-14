@@ -6,7 +6,6 @@ import Projet from './pages/projet';
 import Error from './pages/error'
 import Header from "./components/header";
 import Footer from "./components/footer";
-import './i18n';
 import './styles_SCSS/app.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
