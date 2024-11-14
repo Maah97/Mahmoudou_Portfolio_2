@@ -71,7 +71,7 @@
         "categorie": "Accessibility, debugging and SEO optimization of a website",
         "link": {
             "github": "https://github.com/Maah97/Projet-4_D-buggez-et-optimisez-un-site-de-photographe",
-            "files": "/Mahmoudou_Portfolio/Files_of_the_project_optimization_SEO_portfolio_Nina.rar"
+            "files": "/Files_of_the_project_optimization_SEO_portfolio_Nina.rar"
         },
         "technologie":[
             "Lighthouse"
@@ -150,15 +150,15 @@
         "categorie": "Project management with the agile method",
         "link": {
             "github": "",
-            "files": "/Mahmoudou_Portfolio/Files_of_the_project_Menu_Maker_for_Qwenta.rar"
+            "files": "/Files_of_the_project_Menu_Maker_for_Qwenta.rar"
         },
         "technologie":[
             "Notion"
         ],
         "description": "We planned the development of the qwenta company's menu maker site, which will allow restaurateurs to display and lay out their menus easily in just a few clicks. To do this, we used the agile method to plan the project by defining user stories, technical and functional specifications. We created a Kanban board on Notion that allowed us to assign tasks to the different resources of the project but also allows us to follow the progress of the project in real time. We also set up a technology monitoring system to be able to be up to date with technological developments.",
-        "cover": "/Mahmoudou_Portfolio/assets/images_qwenta/imgCoverQwenta.webp",
+        "cover": "/assets/images_qwenta/imgCoverQwenta.webp",
         "pictures": [
-            "/Mahmoudou_Portfolio/assets/images_qwenta/imgCoverQwenta1.webp",
+            "/assets/images_qwenta/imgCoverQwenta1.webp",
             "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta.webp",
             "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta1.webp",
             "/Mahmoudou_Portfolio/assets/images_qwenta/imgQwenta2.webp",
