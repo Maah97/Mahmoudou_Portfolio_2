@@ -1,4 +1,5 @@
-{
+[
+  {
     "headerlink": {
       "link1": "ACCUEIL",
       "link2": "À PROPOS",
@@ -54,3 +55,4 @@
     },
     "footer": "tous droits réservés"
   }
+]
