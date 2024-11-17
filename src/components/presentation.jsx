@@ -128,8 +128,8 @@ function Presentation() {
             </div>
             <p className="change-langue">{t("changeLangage")}</p>
             <div className='langage'>
-                <img className={lang === 'en' ? "En selected" : "En"} onClick={() => toggleLang('en')} src= {FrIcone} alt="Icone langue française" />
-                <img className={lang === 'fr' ? "Fr selected" : "Fr"} onClick={() => toggleLang('fr')} src= {EnIcone} alt="Icone langue anglaise" />
+                <img className={lang === 'en' ? "En selected" : "En"} onClick={() => toggleLang('en')} src= {EnIcone} alt="Icone langue anglaise" />
+                <img className={lang === 'fr' ? "Fr selected" : "Fr"} onClick={() => toggleLang('fr')} src= {FrIcone} alt="Icone langue française" />
             </div>
         </article>
     )
