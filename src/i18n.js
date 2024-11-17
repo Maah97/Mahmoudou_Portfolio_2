@@ -15,7 +15,7 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
     supportedLngs: Object.keys(supportedLngs),
     returnObjects: true,
     backend: {
-      loadPath: '/public/locales/{{lng}}/translation.json'
+      loadPath: '/locales/{{lng}}/translation.json'
   }
 });
 export default i18n;
