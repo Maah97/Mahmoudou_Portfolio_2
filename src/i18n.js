@@ -13,6 +13,10 @@ i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
     fallbackLng: 'en',
     lng: 'en',
     supportedLngs: Object.keys(supportedLngs),
-    returnObjects: true
+    returnObjects: true,
+    backend: {
+      ns: ['translation'],
+      loadPath: 'locales/{{lng}}/{{ns}}.json'
+  }
 });
 export default i18n;
