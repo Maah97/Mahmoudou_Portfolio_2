@@ -14,18 +14,20 @@ import { ThemeProvider } from './context/theme';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router >
-    <ThemeProvider>
-        <LangProvider>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects/:id" element={<Projet />} />
-            <Route path="*" element={<Error />} />
-          </Routes>
-          <Footer />
-        </LangProvider>
-      </ThemeProvider>
-    </Router>
+    <React.Suspense>
+      <Router >
+      <ThemeProvider>
+          <LangProvider>
+            <Header />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects/:id" element={<Projet />} />
+              <Route path="*" element={<Error />} />
+            </Routes>
+            <Footer />
+          </LangProvider>
+        </ThemeProvider>
+      </Router>
+    </React.Suspense>
   </React.StrictMode>
 );
