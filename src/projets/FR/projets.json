@@ -1,0 +1,169 @@
+[
+  {
+    "id": "1",
+    "title": "Page d'accueil de l'agence de voyages Booki",
+    "date": "mai 2024",
+    "skillsDev": "Intégration de contenu selon une maquette et Mise en place d'une interface responsive avec HTML et CSS",
+    "problems": "La difficulté rencontrée dans ce projet a été la mise en place de la réactivité du site pour la version tablette et mobile. Pour palier à ce problème, nous avons modifié les unités de dimensionnement des éléments du site avec l'utilisation de pourcentages.",
+    "categorie": "Développement front-end et responsivité du site",
+    "link": {
+      "github": "https://github.com/Maah97/Projet-2-Page-d-accueil-Booki",
+      "files": ""
+    },
+    "technologie": [
+      "html5",
+      "css3"
+    ],
+    "description": "Dans ce projet nous sommes chargés de créer la page d'accueil d'une agence de voyage Booki qui permettra aux utilisateurs de trouver des hébergements et des activités dans la ville de leur choix. Cette page est responsive et doit s'adapter aux différents écrans (Desktop, tablette et téléphone) L'intégration de l'interface du site se fait avec du code HTML et CSS.",
+    "cover": "/assets/images_booki/cover_projet_1.webp",
+    "pictures": [
+      "/assets/images_booki/cover_projet_2.webp",
+      "/assets/images_booki/Desktop.webp",
+      "/assets/images_booki/img.webp",
+      "/assets/images_booki/img1.webp",
+      "/assets/images_booki/img2.webp",
+      "/assets/images_booki/img3.webp",
+      "/assets/images_booki/img4.webp",
+      "/assets/images_booki/img5.webp",
+      "/assets/images_booki/img6.webp",
+      "/assets/images_booki/img7.webp",
+      "/assets/images_booki/img8.webp"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Site portfolio d'un architecte d'intérieur",
+    "date": "juin 2024",
+    "skillsDev": "Programmation Javascript avec récupération de données utilisateur via des formulaires. Manipulation d'éléments DOM et gestion d'événements utilisateur avec JavaScript.",
+    "problems": "Nous avons rencontré quelques problèmes dans ce projet lors de la configuration du formulaire d'ajout de projet et de la configuration de l'opération de création dans l'API pour ajouter un nouveau projet dans l'API du projet. Nous avons résolu ce problème en consultant la documentation de l'API sur la syntaxe des opérations de création.",
+    "categorie": "Développement front-end avec javascript pour la création de pages web dynamiques",
+    "link": {
+      "github": "https://github.com/Maah97/Projet-3-Creez-une-page-web-dynamique-avec-JavaScript",
+      "files": ""
+    },
+    "technologie": [
+      "html5",
+      "css3",
+      "js"
+    ],
+    "description": "Nous avons pour mission, pour ce projet, de finaliser le front-end du site portfolio d'une architecte d'intérieur nommée Sophie BLuel. Dans ce projet, nous avons utilisé JavaScript pour rendre le site dynamique en effectuant des appels API pour récupérer et transmettre des données. Nous avons également mis en place un système de connexion qui enregistre le jeton d'authentification si Sophie est connectée en modifiant l'apparence du site et en lui donnant la possibilité d'ajouter ou de supprimer des projets du site. ",
+    "cover": "/assets/images_sophie/imgCoverSophie.webp",
+    "pictures": [
+      "/assets/images_sophie/imgCoverSophie1.webp",
+      "/assets/images_sophie/imgSophie.webp",
+      "/assets/images_sophie/imgSophie1.webp",
+      "/assets/images_sophie/imgSophie2.webp",
+      "/assets/images_sophie/imgSophie3.webp",
+      "/assets/images_sophie/imgSophie4.webp",
+      "/assets/images_sophie/imgSophie5.webp",
+      "/assets/images_sophie/imgSophie6.webp",
+      "/assets/images_sophie/imgSophie7.webp"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Débogage et optimisation SEO d'un site internet de photographe",
+    "date": "juillet 2024",
+    "problems": "Lors de l'optimisation des performances, nous avons rencontré des difficultés lors de la conversion et de l'extension des images. Afin de résoudre ce problème, nous avons utilisé un logiciel d'optimisation d'image et l'extension webp.",
+    "skillsDev": "Optimiser les performances et déboguer un site web à l'aide de Chrome DevTools. Rédiger un livre de recettes pour tester un site. Optimiser le référencement d'un site et améliorer l'accessibilité d'un site.",
+    "categorie": "Accessibilité, débogage et optimisation SEO d'un site internet",
+    "link": {
+      "github": "https://github.com/Maah97/Projet-4_D-buggez-et-optimisez-un-site-de-photographe",
+      "files": "/Files_of_the_project_optimization_SEO_portfolio_Nina.rar"
+    },
+    "technologie": [
+      "Phare"
+    ],
+    "description": "Dans ce projet, nous avons amélioré les performances SEO du site portfolio d'un photographe afin d'augmenter la vitesse de chargement du site et son référencement naturel afin d'apparaître dans les premiers résultats de Google. Nous avons également corrigé quelques bugs liés au fonctionnement du site mais aussi quelques problèmes d'accessibilité afin que le site soit lisible et accessible pour tous types d'utilisateurs, même ceux en situation de handicap.",
+    "cover": "/assets/images_Nina/imgCover.webp",
+    "pictures": [
+      "/assets/images_Nina/imgCover1.webp",
+      "/assets/images_Nina/imgNina1.webp",
+      "/assets/images_Nina/imgNina2.webp",
+      "/assets/images_Nina/imgNina3.webp",
+      "/assets/images_Nina/imgNina4.webp"
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Création d'une application web de location immobilière avec React",
+    "date": "août 2024",
+    "problems": "Nous rencontrons quelques difficultés pour récupérer les données du fichier json qui contenait les données sur le logement. Pour résoudre ce problème, nous avons téléchargé le fichier json et l'avons importé dans notre projet React.",
+    "skillsDev": "Développement front-end avec ReactJS avec configuration de la navigation entre les pages d'application à l'aide de React Router. Initialisation d'une application avec Create React App et développement d'éléments d'interface de site Web à l'aide de composants React.",
+    "categorie": "Développement front-end avec React et le préprocesseur SASS de CSS",
+    "link": {
+      "github": "https://github.com/Maah97/Projet-5_Cr-ez-une-application-web-de-location-immobili-re-avec-React",
+      "files": ""
+    },
+    "technologie": [
+      "réagir",
+      "toupet"
+    ],
+    "description": "Kasa est une société de location d'appartements entre particuliers qui souhaitait créer une application Web React pour son site afin de présenter les hébergements et leurs évaluations d'utilisateurs. Nous avons implémenté le projet React et développé l'application entière, les composants React, les routes React Router, en suivant les maquettes Figma (responsive !). Nous avons utilisé Sass qui est le préprocesseur CSS pour coder le style des composants de l'application.",
+    "cover": "/assets/images_kasa/imgCoverKasa.webp",
+    "pictures": [
+      "/assets/images_kasa/imgCoverKasa1.webp",
+      "/assets/images_kasa/imgKasa1.webp",
+      "/assets/images_kasa/imgKasa2.webp",
+      "/assets/images_kasa/imgKasa3.webp",
+      "/assets/images_kasa/imgKasa4.webp",
+      "/assets/images_kasa/imgKasa5.webp"
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Développement backend pour un site de notation de livres",
+    "date": "septembre 2024",
+    "problems": "Dans ce projet Backend, le problème que nous avons rencontré était la configuration d'un système de notation de livres par un autre utilisateur et la mise à jour de la moyenne des notes en même temps. Nous avons résolu ce problème en utilisant des propriétés et des fonctions qui peuvent être appliquées aux tables.",
+    "skillsDev": "Utilisation de NodeJS et MongoDB avec la mise en œuvre d'un modèle de données logique conforme à la réglementation. Mise en œuvre des opérations CRUD (Création, Lecture, Mise à jour et Suppression) de manière sécurisée et Stockage des données de manière sécurisée.",
+    "categorie": "Développement backend avec NodeJS, Express et MongoDB",
+    "link": {
+      "github": "https://github.com/Maah97/Projet-6_D-veloppez-le-back-end-d-un-site-de-notation-de-livres",
+      "files": ""
+    },
+    "technologie": [
+      "nœud",
+      "MongoDB"
+    ],
+    "description": "Dans ce projet, nous avons développé le backend d'un site d'évaluation de livres pour une librairie. Nous avons implémenté toutes les routes API en respectant un cahier des charges bien défini au préalable en utilisant NodeJS pour la programmation API et MongoDB pour la base de données. Le BackEnd permet à l'utilisateur de créer un compte, de se connecter, d'ajouter, de modifier ou de supprimer un livre. La sécurité est également prise en compte dans ce projet grâce à l'utilisation de tokens d'authentification.",
+    "cover": "/assets/images_livres/imgCoverLivre.webp",
+    "pictures": [
+      "/assets/images_livres/imgCoverLivre1.webp",
+      "/assets/images_livres/imgLivre.webp",
+      "/assets/images_livres/imgLivre1.webp",
+      "/assets/images_livres/imgLivre2.webp",
+      "/assets/images_livres/imgLivre3.webp",
+      "/assets/images_livres/imgLivre4.webp"
+    ]
+  },
+  {
+    "id": "6",
+    "title": "Planification du développement d'un site Web de création de menus pour les restaurateurs",
+    "date": "octobre 2024",
+    "skillsDev": "Suivi de l'avancement d'un projet à l'aide d'un outil de gestion de projet tel que Notion. Rédaction des spécifications techniques d'un projet web en fonction des besoins fonctionnels. Décomposition en fonctionnalités et tâches pour préparer le développement et la présentation de la solution technique. La mise en place d'une méthode de veille technologique et de versioning d'un projet avec Git et Github. L'installation d'un environnement de développement front-end.",
+    "problems": "Le principal problème rencontré dans ce projet était la classification des différentes tâches à réaliser dans les colonnes à faire, en cours, à tester et terminées du tableau Kanban. Nous avons résolu ce problème en analysant chaque tâche en fonction de son importance et de son délai de livraison. Nous avons également rencontré un problème lors de la rédaction des spécifications techniques et du choix technologique. Pour résoudre ce problème, nous avons rédigé et détaillé toutes les fonctionnalités à intégrer.",
+    "categorie": "Gestion de projet avec la méthode agile",
+    "link": {
+      "github": "",
+      "files": "/Files_of_the_project_Menu_Maker_for_Qwenta.rar"
+    },
+    "technologie": [
+      "Notion"
+    ],
+    "description": "Nous avons planifié le développement du site de création de menus de l'entreprise qwenta, qui permettra aux restaurateurs d'afficher et de mettre en page leurs menus facilement en quelques clics. Pour cela, nous avons utilisé la méthode agile pour planifier le projet en définissant des user stories, des spécifications techniques et fonctionnelles. Nous avons créé un tableau Kanban sur Notion qui nous a permis d'assigner des tâches aux différentes ressources du projet mais nous permet également de suivre l'avancement du projet en temps réel. Nous avons également mis en place un système de veille technologique pour pouvoir être à jour des évolutions technologiques.",
+    "cover": "/assets/images_qwenta/imgCoverQwenta.webp",
+    "pictures": [
+      "/assets/images_qwenta/imgCoverQwenta1.webp",
+      "/assets/images_qwenta/imgQwenta.webp",
+      "/assets/images_qwenta/imgQwenta1.webp",
+      "/assets/images_qwenta/imgQwenta2.webp",
+      "/assets/images_qwenta/imgQwenta3.webp",
+      "/assets/images_qwenta/imgQwenta4.webp",
+      "/assets/images_qwenta/imgQwenta5.webp",
+      "/assets/images_qwenta/imgQwenta6.webp",
+      "/assets/images_qwenta/imgQwenta7.webp",
+      "/assets/images_qwenta/imgQwenta8.webp",
+      "/assets/images_qwenta/imgQwenta9.webp"
+    ]
+  }
+]

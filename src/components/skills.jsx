@@ -1,9 +1,13 @@
-import { useEffect, useRef, useMemo } from "react";
+import { useEffect, useRef, useMemo, useContext } from "react";
+import { ThemeContext } from "../context/theme";
+import { useTranslation } from "react-i18next";
 import logoMongoDB from '../assets/mongodb.svg';
 import logoLighthouse from '../assets/lighthouse.svg'
 import logoNotion from '../assets/notion-logo.svg'
 
 function Skills() {
+    const { t } = useTranslation();
+    const {theme} = useContext(ThemeContext);
     const containRef = useRef(null);
     const ratio = 0.1;
     const options = useMemo(() => {
@@ -17,6 +21,7 @@ function Skills() {
     const handleIntersect = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.intersectionRatio > ratio) {
+                entry.target.style.opacity = 1;
                 entry.target.classList.add('visible-competences');
                 observer.unobserve(entry.target);
             }
@@ -46,8 +51,8 @@ function Skills() {
         }
     }, [containRef, options]);
     return(
-        <article ref={containRef} className="competences">
-            <h2 className="title-skills">SKILLS</h2>
+        <article ref={containRef} className={theme==='light' ? "competences" : "competences dark visible"}>
+            <h2 className="title-skills">{t("skills")}</h2>
             <div className="ligne ligne-skills"></div>
             <div className="bloc-icones-competences">
                 <div className='carte-competence html'>

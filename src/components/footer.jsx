@@ -1,7 +1,12 @@
-import { useEffect, useRef, useMemo } from "react";
+import { useEffect, useRef, useMemo, useContext } from "react";
+import { ThemeContext } from '../context/theme';
 import imgTwitter1 from '../assets/logo-twitter.svg';
+import imgTwitter2 from '../assets/logo-twitter-2.svg';
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+    const { t } = useTranslation();
+    const {theme} = useContext(ThemeContext);
     const date = new Date();
     const year = date.getFullYear();
     const containRef = useRef(null);
@@ -17,7 +22,9 @@ function Footer() {
     const handleIntersect = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.intersectionRatio > ratio) {
+                entry.target.style.opacity = 1;
                 entry.target.classList.add('visible-footer');
+                entry.target.style.transition = "all 1s cubic-bezier(0.5, 0, 0, 1)";
                 observer.unobserve(entry.target);
             }
         });
@@ -39,7 +46,7 @@ function Footer() {
         }
     }, [containRef, options]);
     return (
-        <footer ref={containRef}>
+        <footer className={theme==='light' ? "" : "dark visible"} ref={containRef}>
             <svg id="curve" className="svg-curve svg-curve-footer" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-100 79C-100 79 218.416 23.165 693.5 23.165C1168.58 23.165 1487 79 1487 79V0H-100V79Z"></path>
             </svg>
@@ -58,7 +65,7 @@ function Footer() {
                 </a>
             </div>
             <p className="droit-reserve">
-                <i className="fa-regular fa-copyright"></i>{" " + year + " Mahmoudou Abdoul Nganiyyou, all rights reserved"}
+                <i className="fa-regular fa-copyright"></i>{" " + year + " Mahmoudou Abdoul Nganiyyou, " + t("footer")}
             </p>
         </footer>
     )

@@ -159,9 +159,37 @@
     }
 }
 
-.visible-apropos {
-    opacity: 1;
+.apropos.dark {
+    background-color: #000000;
+    .svg-curve {
+        path {
+            fill: #494949;
+        }
+    }
+    .txt-apropos {
+        h2 {
+            color: white;
+        }
+        .ligne {
+            background: #ffffff;
+        }
+        p {
+           color: white;
+        }
+        .paragraphes-apropos {
+            border: 4px solid #666565da;
+            background-color: #505050;
+            box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.863);
+            p {
+               color: white;
+                a {
+                    color: rgba(203, 164, 255, 0.788);
+                }
+            }
+        }
+    }
 }
+
 .paragraphes-apropos.visible-apropos, .txt-apropos-h2.visible-apropos, .ligne1.visible-apropos, .txt-apropos-p.visible-apropos, .ligne2.visible-apropos {
     opacity: 1;
     transform: translateY(0px);

@@ -1,11 +1,18 @@
-import { useEffect, useRef, useMemo } from "react";
+import { useEffect, useRef, useMemo, useContext } from "react";
+import { LangContext } from "../context/langage";
+import { ThemeContext } from "../context/theme";
+import { useTranslation } from "react-i18next";
 import ImgOrdi from '../assets/ordi.webp';
 import FrIcone from '../assets/fr-language-icon.webp';
 import EnIcone from '../assets/en-language-icon.webp';
 import imgTwitter from '../assets/twitter.webp';
-import CV from '../assets/CV_MAHMOUDOU_ANGLAIS.pdf';
+import cvEn from '../assets/CV_MAHMOUDOU_EN.pdf';
+import cvFr from '../assets/CV_MAHMOUDOU_FR.pdf';
 
 function Presentation() {
+    const {lang, toggleLang} = useContext(LangContext);
+    const {theme, toggleTheme} = useContext(ThemeContext);
+    const { t } = useTranslation();
     const containRef = useRef(null);
     const ratio = 0.1;
     const options = useMemo(() => {
@@ -19,6 +26,7 @@ function Presentation() {
     const handleIntersect = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.intersectionRatio > ratio) {
+                entry.target.style.opacity = 1;
                 entry.target.classList.add('visible');
                 observer.unobserve(entry.target);
             }
@@ -35,6 +43,7 @@ function Presentation() {
             observer.observe(contain.querySelector('.ordi'));
             observer.observe(contain.querySelector('.changement-background'));
             observer.observe(contain.querySelector('.langage'));
+            observer.observe(contain.querySelector('.change-langue'));
         }
         return () => {
             observer.unobserve(contain);
@@ -43,10 +52,10 @@ function Presentation() {
             observer.unobserve(contain.querySelector('.ordi'));
             observer.unobserve(contain.querySelector('.changement-background'));
             observer.unobserve(contain.querySelector('.langage'));
+            observer.unobserve(contain.querySelector('.change-langue'));
         }
     }, [containRef, options]);
 
-    const txt = "HELLO, WELCOME TO MY PORTFOLIO OF WEB DEVELOPER";
     const txtPresentationParagrapheTitre = useRef(null);
     
     useEffect(() => {
@@ -69,9 +78,9 @@ function Presentation() {
             }
         }
         function write() {
-            titlePortfolio.append(txt[index]);
+            titlePortfolio.append(t("presentation.title")[index]);
             text = titlePortfolio.textContent;
-            if (index < txt.length-1) {
+            if (index < t("presentation.title").length-1) {
                 index++;
                 return setTimeout(() => {
                    return write();      
@@ -88,7 +97,7 @@ function Presentation() {
         
     })
     return (
-        <article ref={containRef} className="presentation">
+        <article ref={containRef} className={theme==='light' ? "presentation" : "presentation dark visible"}>
             <div className='bloc-de-presentation'>
                 <div className='icones-reseaux-sociaux'>
                     <a href="https://linkedin.com/in/mahmoudou-abdoul-nganiyyou-2b805a180" rel='noreferrer' target='_blank'>
@@ -102,14 +111,14 @@ function Presentation() {
                     </a>
                 </div>
                 <div className='txt-presentation'>
-                    <h1>HELLO, WELCOME TO MY PORTFOLIO OF WEB DEVELOPPER</h1>
+                    <h1>{t("presentation.title")}</h1>
                     <div ref={txtPresentationParagrapheTitre} className="txt-presentation-paragraphe-title"></div>
-                    <p className="txt-presentation-paragraphe">My name is Mahmoudou Abdoul Nganiyyou and i'm a Result-Oriented fullstack Developer building and managing Websites and Web Applications that leads to the success of the overall product</p>
-                    <a className="cv" href={CV} download="CV_Mahmoudou.pdf" rel='noreferrer' target='_blank'>Download my CV</a>
+                    <p className="txt-presentation-paragraphe">{t("presentation.paragrahe")}</p>
+                    <a className="cv" style={lang === 'fr' ? {width: "300px"} : {}} href={lang==='en' ? cvEn : cvFr} download="CV_Mahmoudou.pdf" rel='noreferrer' target='_blank'>{t("presentation.cv")}</a>
                 </div>
                 <div className='image-presentation-et-background'>
                     <img className='ordi' src={ ImgOrdi } alt="Ordinateur de travail d'un developpeur web" />
-                    <div className='changement-background'>
+                    <div onClick={() => toggleTheme()} className='changement-background'>
                         <i id='sun' className="fa-solid fa-sun"></i>
                         <i id='moon' className="fa-solid fa-moon"></i>
                         <div className='interrupteur-background'></div>
@@ -117,9 +126,10 @@ function Presentation() {
                    
                 </div>
             </div>
+            <p className="change-langue">{t("changeLangage")}</p>
             <div className='langage'>
-                <img className='Fr' src= {FrIcone} alt="Icone langue française" />
-                <img className='En' src= {EnIcone} alt="Icone langue anglaise" />
+                <img className={lang === 'en' ? "En selected" : "En"} onClick={() => toggleLang('en')} src= {FrIcone} alt="Icone langue française" />
+                <img className={lang === 'fr' ? "Fr selected" : "Fr"} onClick={() => toggleLang('fr')} src= {EnIcone} alt="Icone langue anglaise" />
             </div>
         </article>
     )

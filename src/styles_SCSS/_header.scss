@@ -163,8 +163,20 @@ header {
     }
 }
 
-.visible {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+header.dark {
+    background: #191919;
+    border-bottom: 2px solid rgb(145, 0, 255);
+    .photo-et-nom {
+        p {
+            color: white;
+        }
+    }
+    nav {
+        .navigation {
+            color: white;
+        }
+        .navigation:hover {
+            color: black;
+        }
+    }
 }

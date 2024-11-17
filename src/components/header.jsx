@@ -1,10 +1,16 @@
-import React from "react";
+import { React, useContext} from "react";
+import { LangContext } from "../context/langage";
+import { ThemeContext } from "../context/theme";
+import { useTranslation } from "react-i18next";
 import { HashLink } from "react-router-hash-link";
 import { useEffect, useRef, useMemo } from "react";
 import { NavLink } from 'react-router-dom';
-import photoProphile from '../assets/Photo-profil.webp'
+import photoProphile from '../assets/Photo-profil.webp';
 
 function Header() {
+    const {lang} = useContext(LangContext);
+    const {theme} = useContext(ThemeContext);
+    const { t } = useTranslation();
     function AddClassActive() {
         const menu = document.querySelector('nav');
         menu.classList.toggle('active');
@@ -28,7 +34,9 @@ function Header() {
     const handleIntersect = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.intersectionRatio > 0.1) {
-                entry.target.classList.add('visible');
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = "translateY(0px)";
+                entry.target.style.transition = "all 1s cubic-bezier(0.5, 0, 0, 1)";
                 observer.unobserve(entry.target);
             }
         });
@@ -46,16 +54,16 @@ function Header() {
 
     return (
         <header ref={containerRef}>
-            <div className='photo-et-nom'>
+            <div className={theme==='light' ? "" : "dark visible"}>
                 <img src={photoProphile} alt="profil" />
                 <p>MAHMOUDOU ABDOUL NGANIYYOU</p>
             </div>
             <nav>
-                <NavLink onClick={AddClassActive} className='navigation' to="/">HOME</NavLink>
-                <HashLink onClick={AddClassActive}  className='navigation' to="/#about">ABOUT</HashLink>
-                <HashLink onClick={AddClassActive}  className='navigation' to="/#skills">SKILLS</HashLink>
-                <HashLink onClick={AddClassActive}  className='navigation' to="/#projects">PROJECTS</HashLink>
-                <HashLink onClick={AddClassActive}  className='navigation' to="/#contact">CONTACT</HashLink>
+                <NavLink onClick={AddClassActive} className='navigation' to="/">{t("headerlink.link1")}</NavLink>
+                <HashLink onClick={AddClassActive}  className='navigation' to="/#about">{t("headerlink.link2")}</HashLink>
+                <HashLink onClick={AddClassActive} style={lang === 'fr' ? {width: "130px"} : {}} className='navigation' to="/#skills">{t("headerlink.link3")}</HashLink>
+                <HashLink onClick={AddClassActive}  className='navigation' to="/#projects">{t("headerlink.link4")}</HashLink>
+                <HashLink onClick={AddClassActive}  className='navigation' to="/#contact">{t("headerlink.link5")}</HashLink>
             </nav>
             <div onClick={AddClassActive} className='menu-hamburger'>
                     <i className="fa-solid fa-bars"></i>

@@ -58,11 +58,22 @@
     }
 }
 
-.visible-projets {
-    opacity: 1;
+.projets.dark {
+    background-color: #000;
+    .svg-curve {
+        path {
+            fill: #494949;
+        }
+    }
+    h2 {
+       color: rgb(255, 255, 255);
+    }
+    .ligne {
+        background: #ffffff;
+    }
 }
+
 .txt-title-projets.visible-projets, .ligne-projets.visible-projets {
-    opacity: 1;
     transform: translateY(0px);
     transition: all 0.5s cubic-bezier(0.5, 0, 0, 1);
 }

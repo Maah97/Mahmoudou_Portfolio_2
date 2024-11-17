@@ -1,11 +1,14 @@
-import React from "react";
-import { useEffect, useRef, useMemo } from "react";
+import { React, useEffect, useRef, useMemo, useContext } from "react";
+import { ThemeContext } from "../context/theme";
+import { useTranslation } from "react-i18next";
 import MongoDB from '../assets/mongodb2.svg';
 import Lighthouse from '../assets/lighthouse2.svg'
 import Notion from '../assets/notion-logo.svg'
 import { NavLink } from "react-router-dom";
 
 function CardProjet(props) {
+    const { t } = useTranslation();
+    const {theme} = useContext(ThemeContext);
     const containRef = useRef(null);
     const ratio = 0.1;
     const scrollToTop = () => {
@@ -22,6 +25,7 @@ function CardProjet(props) {
     const handleIntersect = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.intersectionRatio > ratio) {
+                entry.target.style.opacity = 1;
                 entry.target.classList.add('visible-card-projet');
                 observer.unobserve(entry.target);
             }
@@ -38,7 +42,7 @@ function CardProjet(props) {
         }
     }, [containRef, options]);
     return (
-        <NavLink onClick={scrollToTop} ref={containRef} to={'/projects/' + props.id} className="card-projet">
+        <NavLink onClick={scrollToTop} ref={containRef} to={'/projects/' + props.id} className={theme==='light' ? "card-projet" : "card-projet dark visible"}>
             <div className='conteneur-card-projet'>
                 <img src={props.imgCover} alt="cover homepage of the project" className='img-cover' />
                 <p>{props.titre}</p>
@@ -56,7 +60,7 @@ function CardProjet(props) {
                     }
                 </div>
             </div>
-            <div className="txt-hover"><p>See the project</p></div>
+            <div className="txt-hover"><p>{t("cardProjet")}</p></div>
         </NavLink>
     )
 };

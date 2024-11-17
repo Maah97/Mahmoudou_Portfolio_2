@@ -261,9 +261,81 @@
     }
 }
 
-.visible-competences {
-    opacity: 1;
+.competences.dark {
+    background-color: #494949;
+    h2 {
+        color: #f4dfff;
+    }
+    .ligne {
+        background: #f4dfff;
+    }
+    .bloc-icones-competences {
+        .html {
+            color: #fffefe;
+            background-color: #ff7562;
+            &:hover {
+                box-shadow: -2px -2px 50px #ab4e42;
+            }
+        }
+        .css {
+            color: #ffffff;
+            background-color: #4b93ff;
+            &:hover {
+                box-shadow: -2px -2px 50px #63a2ff;
+            }
+        }
+        .sass {
+            color: #fffdfd;
+            background-color: #fe7575;
+            &:hover {
+                box-shadow: -2px -2px 50px #ff9797;
+            }
+        }
+        .js {
+            color: #000000;
+            background-color: #eeff00;
+            &:hover {
+                box-shadow: -2px -2px 50px #908a53;
+            }
+        }
+        .react {
+            color: rgb(0, 0, 0);
+            background-color: rgb(131, 220, 255);
+            &:hover {
+                box-shadow: -2px -2px 50px rgb(141, 194, 215);
+            }
+        }
+        .node {
+            color: #000000;
+            background-color: #92ff9b;
+            &:hover {
+                box-shadow: -2px -2px 50px #567658;
+            }
+        }
+        .mongodb {
+            color: #000000;
+            background-color: #6dff79;
+            &:hover {
+                box-shadow: -2px -2px 50px #609765;
+            }
+        }
+        .lighthouse {
+            color: #000000;
+            background-color: #ff8d7d;
+            &:hover {
+                box-shadow: -2px -2px 50px #a2726c;
+            }
+        }
+        .notion{
+            color: rgb(0, 0, 0);
+            background-color: rgb(198, 198, 198);
+            &:hover {
+                box-shadow: -2px -2px 50px rgb(255, 255, 255);
+            }
+        }
+    }
 }
+
 .carte-competence.visible-competences, .title-skills.visible-competences, .ligne-skills.visible-competences {
     opacity: 1;
     transform: translateY(0px);

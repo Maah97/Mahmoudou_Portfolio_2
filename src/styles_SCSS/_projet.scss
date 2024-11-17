@@ -185,12 +185,42 @@
     }
 }
 
-.visible-projet {
-    opacity: 1;
+.projet.dark {
+    background-color: #000;
+    h1 {
+        color: #f4dfff;
+    }
+    .infos-projets {
+        .description, .problems {
+            background-color: #494949;
+            box-shadow: 4px 10px 10px rgb(255, 255, 255);
+            p {
+                color: #f4dfff;
+            }
+        }
+        .date-et-github {
+            background-color: #494949;
+            box-shadow: 4px 10rgb(0, 0, 0)px rgb(255, 255, 255);
+            p {
+                color: #f4dfff;
+                a {
+                    color: #f4dfff;
+                    &:hover {
+                        color: rgb(255, 0, 234);
+                    }
+                }
+            }
+        }
+        h2 {
+            color: #f4dfff;
+        }
+        .ligne {
+            background: #f4dfff;
+        }
+    }
 }
 
 .title-projet.visible-projet, .date-et-github.visible-projet, .description.visible-projet, .skillsDev.visible-projet, .problems.visible-projet {
-    opacity: 1;
     transform: translateY(0px);
     transition: all 1.5s cubic-bezier(0.5, 0, 0, 1);
 }

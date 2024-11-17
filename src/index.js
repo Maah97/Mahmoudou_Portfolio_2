@@ -6,19 +6,26 @@ import Projet from './pages/projet';
 import Error from './pages/error'
 import Header from "./components/header";
 import Footer from "./components/footer";
+import "./i18n";
+import { LangProvider } from './context/langage';
 import './styles_SCSS/app.scss';
+import { ThemeProvider } from './context/theme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router >
-      <Header />
-      <Routes >
-        <Route path="/" element={<Home />} />
-        <Route path="/projects/:id" element={<Projet />} />
-        <Route path="*" element={<Error/>} />
-      </Routes>
-      <Footer />
+    <ThemeProvider>
+        <LangProvider>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects/:id" element={<Projet />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+          <Footer />
+        </LangProvider>
+      </ThemeProvider>
     </Router>
   </React.StrictMode>
 );
