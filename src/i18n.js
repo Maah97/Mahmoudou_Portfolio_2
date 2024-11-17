@@ -7,7 +7,6 @@ import HttpApi from 'i18next-http-backend';
 i18n.use(HttpApi).use(LanguageDetector).use(initReactI18next).init({
     debug: true,
     fallbackLng: 'en',
-    lng: 'en',
     backend: {
       loadPath: '/locales/{{lng}}/translation.json'
   }
