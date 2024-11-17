@@ -61,7 +61,7 @@ function Footer() {
                     <i id='github' className="fa-brands fa-github"></i>
                 </a>
                 <a href="https://x.com/mahmoudouabdoul" id='ImgTwitter' rel='noreferrer' target='_blank'>
-                    <img id='twitter' src={imgTwitter1} alt="X anciennement twitter" />
+                    <img id='twitter' src={theme==='light' ? imgTwitter1 : imgTwitter2} alt="X anciennement twitter" />
                 </a>
             </div>
             <p className="droit-reserve">
