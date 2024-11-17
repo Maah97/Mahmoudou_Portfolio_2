@@ -263,13 +263,77 @@
     }
 }
 
-
-.visible-contact {
-    opacity: 1;
+.contact.dark {
+    background-color: #494949;
+    h2 {
+        color: #f4dfff;
+    }
+    .ligne {
+        background: #f4dfff;
+    }
+    p {
+        color: #f4dfff;
+    }
+    h3 {
+        color: #f4dfff;
+    }
+    a {
+        .adresse-mail {
+            background-color: rgb(107, 107, 107);
+            p {
+                color: #f4dfff;
+            }
+            i {
+                color: #f4dfff;
+            }
+            p.copie, i.copie {
+                color: #a9ffa9;
+            }
+            &:hover {
+                background-color: rgba(172, 172, 172, 0.685);
+            }
+        }
+    }
+    .formulaire {
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.37);
+        .label-et-input {
+            label {
+                color: #f4dfff;
+            }
+            input {
+                background-color: rgb(97, 97, 97);
+                color: #f4dfff;
+                &::placeholder {
+                    color: #f4dfff;
+                }
+                &:focus {
+                    outline-color: #da94ff;
+                }
+            }
+            textarea {
+                background-color: rgb(97, 97, 97);
+                color: #f4dfff;
+                &::placeholder {
+                    color: #f4dfff;
+                }
+                &:focus {
+                    outline-color: #da94ff;
+                }
+            }
+        }
+        #submit {
+            background-color: #464646;
+            color: #000000;
+            color: #f4dfff;
+            &:hover {
+                background-color: #583586;
+            }
+        }
+    }
 }
 
 .title-contact-h2.visible-contact, .ligne-contact1.visible-contact, .paragraphe-contact-p.visible-contact, .ligne-contact2.visible-contact, .my-mail-title.visible-contact, .my-mail-copie.visible-contact, .ligne-important.visible-contact, .title-form.visible-contact, .formulaire.visible-contact {
-    opacity: 1;
     transform: translateY(0px);
     transition: all 1s cubic-bezier(0.5, 0, 0, 1);
 }
@@ -278,5 +342,3 @@
     opacity: 0;
     transform: translateY(30px);
 }
-
-

@@ -42,7 +42,7 @@ function CardProjet(props) {
         }
     }, [containRef, options]);
     return (
-        <NavLink onClick={scrollToTop} ref={containRef} to={'/projects/' + props.id} className={theme==='light' ? "card-projet" : "card-projet dark visible"}>
+        <NavLink onClick={scrollToTop} ref={containRef} to={'/projects/' + props.id} className={theme==='light' ? "card-projet" : "card-projet dark visible-card-projet"}>
             <div className='conteneur-card-projet'>
                 <img src={props.imgCover} alt="cover homepage of the project" className='img-cover' />
                 <p>{props.titre}</p>

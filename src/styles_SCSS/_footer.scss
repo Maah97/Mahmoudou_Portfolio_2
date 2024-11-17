@@ -91,8 +91,30 @@ footer {
     }
 }
 
-.visible-footer {
-    opacity: 1;
+footer.dark {
+    background-color: white;
+    .svg-curve {
+        path {
+            fill: #494949;
+        }
+    }
+    .contact-reseaux {
+        a {
+            border: 2px solid rgb(0, 0, 0);
+            &:hover {
+                background: rgba(106, 65, 255, 0.712);
+                border-color: rgba(109, 69, 255, 0.712);
+            }
+            i {
+                font-size: 25px;
+                color: rgba(0, 0, 0, 0.829);
+            }
+        }
+    }
+    p {
+        color: rgba(0, 0, 0, 0.829);
+        font-size: 18px;
+    }
 }
 
 .svg-curve-footer {

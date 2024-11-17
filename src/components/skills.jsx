@@ -51,7 +51,7 @@ function Skills() {
         }
     }, [containRef, options]);
     return(
-        <article ref={containRef} className={theme==='light' ? "competences" : "competences dark visible"}>
+        <article ref={containRef} className={theme==='light' ? "competences" : "competences dark visible-competences"}>
             <h2 className="title-skills">{t("skills")}</h2>
             <div className="ligne ligne-skills"></div>
             <div className="bloc-icones-competences">

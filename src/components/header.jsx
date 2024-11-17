@@ -53,8 +53,8 @@ function Header() {
     }, [containerRef, options])
 
     return (
-        <header ref={containerRef}>
-            <div className={theme==='light' ? "" : "dark visible"}>
+        <header className={theme==='light' ? "" : "dark"} ref={containerRef}>
+            <div className='photo-et-nom'>
                 <img src={photoProphile} alt="profil" />
                 <p>MAHMOUDOU ABDOUL NGANIYYOU</p>
             </div>

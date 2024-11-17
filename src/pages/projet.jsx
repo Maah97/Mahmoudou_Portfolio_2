@@ -51,7 +51,7 @@ function Projet() {
         }
     }, [containRef, options]);
     return (
-        <section id='project' ref={containRef} className={theme==='light' ? "projet" : "projet dark visible"}>
+        <section id='project' ref={containRef} className={theme==='light' ? "projet" : "projet dark visible-projet"}>
             <h1 className='title-projet'><i className="fa-solid fa-angles-right"></i>{t("project.title1")} / {projet.title} / {t("project.title2")}</h1>
             <Caroussel key={projet.id} pictures={projet.pictures} />
             <div className='infos-projets'>
