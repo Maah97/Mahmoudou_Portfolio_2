@@ -1,0 +1,56 @@
+{
+    "headerlink": {
+      "link1": "ACCUEIL",
+      "link2": "À PROPOS",
+      "link3": "COMPÉTENCES",
+      "link4": "PROJETS",
+      "link5": "CONTACT"
+    },
+    "presentation": {
+      "title": "BONJOUR, BIENVENUE DANS MON PORTFOLIO DE DÉVELOPPEUR WEB",
+      "paragrahe": "Je m'appelle Mahmoudou Abdoul Nganiyyou et je suis un développeur fullstack axé sur les résultats qui crée et gère des sites Web et des applications Web qui conduisent au succès du produit global.",
+      "cv": "Téléchargez mon CV"
+    },
+    "changeLangage": "Changer de langue",
+    "about": {
+      "title": "A PROPOS DE MOI",
+      "subtitle": "Vous trouverez ici plus d'informations sur moi, ce que je fais et mes compétences actuelles principalement en termes de programmation et de technologie.",
+      "paragraphe": {
+        "p1": "Fraîchement sorti d'une formation pour le parcours développeur web sur",
+        "p2": "Je suis plus orienté sur le front-end mais je maîtrise également le côté back-end avec NodeJS et MongoDB. Découvrez quelques uns de mes travaux que j'ai pu réaliser lors de ma formation dans la partie section",
+        "link1": "projets",
+        "p3": "J'aime également partager du contenu lié aux choses que j'ai apprises au fil des années dans le développement Web afin qu'il puisse aider d'autres personnes de la communauté des développeurs. N'hésitez pas à me connecter ou à me suivre sur mon ",
+        "p4": "et",
+        "p5": "où je publie du contenu utile lié au développement Web et à la programmation. Je suis ouvert aux opportunités d'emploi où je peux contribuer, apprendre et grandir. Si vous avez une bonne opportunité qui correspond à mes compétences et à mon expérience, n'hésitez pas à me ",
+        "link2": "contacter"
+      }
+    },
+    "skills": "COMPÉTENCES",
+    "projects": "PROJETS",
+    "cardProjet":"Voir le projet",
+    "project": {
+      "title1": "projet",
+      "title2": "apperçus du projet",
+      "linkProjet": "Ce projet est ici",
+      "linkFolderProject": "Téléchargez les fichiers du projet ici",
+      "skillsDeveloped": "Compétences développées",
+      "descriptionOfTheProject": "Description du projet",
+      "ProblemEncountered": "Problème rencontré"
+    },
+    "contact": {
+      "paragraphe": "N'hésitez pas à me contacter par mail ou en soumettant le formulaire ci-dessous et je vous répondrai dans les plus brefs délais",
+      "email": "Mon email",
+      "copy": "Copié dans le presse-papies",
+      "form": {
+        "title": "Formulaire à soumettre",
+        "name": "Nom",
+        "phname": "Entrez votre nom",
+        "phEmail": "Entrez votre email",
+        "titleProject": "Titre de votre projet",
+        "phTitleProject": "Entrez le titre de votre projet",
+        "phMsg": "Entrez votre message",
+        "submit": "envoyer"
+      }
+    },
+    "footer": "tous droits réservés"
+  }
