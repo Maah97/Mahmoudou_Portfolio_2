@@ -7,8 +7,5 @@ import Backend from 'i18next-http-backend';
 i18n.use(Backend).use(LanguageDetector).use(initReactI18next).init({
     debug: true,
     fallbackLng: 'en',
-    backend: {
-      loadPath: '/locales/{{lng}}/translation.json'
-  }
 });
 export default i18n;
