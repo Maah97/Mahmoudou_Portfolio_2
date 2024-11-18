@@ -72,7 +72,7 @@
       "files": "/Files_of_the_project_optimization_SEO_portfolio_Nina.rar"
     },
     "technologie": [
-      "Phare"
+      "Lighthouse"
     ],
     "description": "Dans ce projet, nous avons amélioré les performances SEO du site portfolio d'un photographe afin d'augmenter la vitesse de chargement du site et son référencement naturel afin d'apparaître dans les premiers résultats de Google. Nous avons également corrigé quelques bugs liés au fonctionnement du site mais aussi quelques problèmes d'accessibilité afin que le site soit lisible et accessible pour tous types d'utilisateurs, même ceux en situation de handicap.",
     "cover": "/assets/images_Nina/imgCover.webp",
@@ -96,8 +96,8 @@
       "files": ""
     },
     "technologie": [
-      "réagir",
-      "toupet"
+      "react",
+      "sass"
     ],
     "description": "Kasa est une société de location d'appartements entre particuliers qui souhaitait créer une application Web React pour son site afin de présenter les hébergements et leurs évaluations d'utilisateurs. Nous avons implémenté le projet React et développé l'application entière, les composants React, les routes React Router, en suivant les maquettes Figma (responsive !). Nous avons utilisé Sass qui est le préprocesseur CSS pour coder le style des composants de l'application.",
     "cover": "/assets/images_kasa/imgCoverKasa.webp",
@@ -122,7 +122,7 @@
       "files": ""
     },
     "technologie": [
-      "nœud",
+      "node",
       "MongoDB"
     ],
     "description": "Dans ce projet, nous avons développé le backend d'un site d'évaluation de livres pour une librairie. Nous avons implémenté toutes les routes API en respectant un cahier des charges bien défini au préalable en utilisant NodeJS pour la programmation API et MongoDB pour la base de données. Le BackEnd permet à l'utilisateur de créer un compte, de se connecter, d'ajouter, de modifier ou de supprimer un livre. La sécurité est également prise en compte dans ce projet grâce à l'utilisation de tokens d'authentification.",

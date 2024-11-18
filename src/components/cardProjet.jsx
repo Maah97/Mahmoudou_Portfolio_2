@@ -1,7 +1,8 @@
 import { React, useEffect, useRef, useMemo, useContext } from "react";
 import { ThemeContext } from "../context/theme";
 import { useTranslation } from "react-i18next";
-import MongoDB from '../assets/mongodb2.svg';
+import MongoDB1 from '../assets/mongodb2.svg';
+import MongoDB2 from '../assets/mongodb3.svg';
 import Lighthouse from '../assets/lighthouse2.svg'
 import Notion from '../assets/notion-logo.svg'
 import { NavLink } from "react-router-dom";
@@ -52,7 +53,7 @@ function CardProjet(props) {
                     {
                         props.technos.map((techno,i) => (
                             <div key={i} className='techno'>
-                                {techno === "MongoDB" ? <img src={MongoDB} alt="logo MongoDB" /> : techno === "Lighthouse" ? <img src={Lighthouse} alt="logo MongoDB" /> : techno === "Notion" ? <img src={Notion} alt="logo MongoDB" />
+                                {techno === "MongoDB" ? <img src={theme==='en' ? MongoDB1 : MongoDB2} alt="logo MongoDB" /> : techno === "Lighthouse" ? <img src={Lighthouse} alt="logo Lighthouse" /> : techno === "Notion" ? <img src={Notion} alt="logo Notion" />
                                 : <i className={`fa-brands fa-${techno}`}></i>}
                                 <p>{techno}</p>
                             </div>
