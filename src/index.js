@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
@@ -14,7 +14,7 @@ import { ThemeProvider } from './context/theme';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <React.Suspense>
+    <Suspense>
       <Router >
       <ThemeProvider>
           <LangProvider>
@@ -28,6 +28,6 @@ root.render(
           </LangProvider>
         </ThemeProvider>
       </Router>
-    </React.Suspense>
+    </Suspense>
   </React.StrictMode>
 );
