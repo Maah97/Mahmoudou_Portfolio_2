@@ -55,7 +55,7 @@ function CardProjet(props) {
                     {
                         props.technos.map((techno,i) => (
                             <div key={i} className='techno'>
-                                {techno === "MongoDB" ? <img src={theme==='en' ? MongoDB1 : MongoDB2} alt="logo MongoDB" /> : techno === "Lighthouse" ? <img src={theme==='en' ? Lighthouse1 : Lighthouse2} alt="logo Lighthouse" /> : techno === "Notion" ? <img src={theme==='en' ? Notion1 : Notion2} alt="logo Notion" />
+                                {techno === "MongoDB" ? <img src={theme==='light' ? MongoDB1 : MongoDB2} alt="logo MongoDB" /> : techno === "Lighthouse" ? <img src={theme==='light' ? Lighthouse1 : Lighthouse2} alt="logo Lighthouse" /> : techno === "Notion" ? <img src={theme==='light' ? Notion1 : Notion2} alt="logo Notion" />
                                 : <i className={`fa-brands fa-${techno}`}></i>}
                                 <p>{techno}</p>
                             </div>
