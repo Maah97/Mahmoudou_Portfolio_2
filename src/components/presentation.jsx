@@ -8,7 +8,6 @@ import EnIcone from '../assets/en-language-icon.webp';
 import imgTwitter from '../assets/twitter.webp';
 import cvEn from '../assets/CV_MAHMOUDOU_EN.pdf';
 import cvFr from '../assets/CV_MAHMOUDOU_FR.pdf';
-import a from '../assets/locales/en/translation.json'
 
 function Presentation() {
     const {lang, toggleLang} = useContext(LangContext);
@@ -96,7 +95,7 @@ function Presentation() {
             return write();      
          },2000);
         
-    })
+    },[])
     return (
         <article ref={containRef} className={theme==='light' ? "presentation" : "presentation dark visible"}>
             <div className='bloc-de-presentation'>
