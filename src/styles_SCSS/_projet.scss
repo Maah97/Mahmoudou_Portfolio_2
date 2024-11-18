@@ -186,21 +186,21 @@
 }
 
 .projet.dark {
-    background-color: #000;
+    background-color: #494949;
     h1 {
         color: #f4dfff;
     }
     .infos-projets {
         .description, .problems {
-            background-color: #494949;
+            background-color: #000000;
             box-shadow: 4px 10px 10px rgb(255, 255, 255);
             p {
                 color: #f4dfff;
             }
         }
         .date-et-github {
-            background-color: #494949;
-            box-shadow: 4px 10rgb(0, 0, 0)px rgb(255, 255, 255);
+            background-color: #000000;
+            box-shadow: 4px 10px 10px rgb(255, 255, 255);
             p {
                 color: #f4dfff;
                 a {
