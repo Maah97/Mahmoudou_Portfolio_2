@@ -6,7 +6,7 @@ import MongoDB2 from '../assets/mongodb3.svg';
 import Lighthouse1 from '../assets/lighthouse2.svg';
 import Lighthouse2 from '../assets/lighthouse3.svg';
 import Notion1 from '../assets/notion-logo.svg';
-import Notion2 from '../assets/notion-logo2.svg'
+import Notion2 from '../assets/notion-logo2.svg';
 import { NavLink } from "react-router-dom";
 
 function CardProjet(props) {
