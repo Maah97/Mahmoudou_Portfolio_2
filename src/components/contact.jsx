@@ -10,23 +10,23 @@ function Contact() {
         const email = document.getElementById('mail');
         const icone = document.getElementById('iconeCopie');
         navigator.clipboard.writeText(email.innerText);
-        email.innerText = "Copié dans le presse-papies";
-        email.style.color = "#036300";
+        email.innerText = t("contact.copy");
+        email.classList.add('copie');
         email.style.fontWeight = "500";
         icone.classList.remove('fa-regular');
         icone.classList.remove('fa-clipboard');
         icone.classList.add('fa-solid');
         icone.classList.add('fa-clipboard-check');
-        icone.style.color = "#036300";
+        icone.classList.add('copie');
         setTimeout(()=> {
             email.innerText = "mahmoudouabdoul@gmail.com";
-            email.style.color = "#430199";
+            email.classList.remove('copie');
             email.style.fontWeight = "300";
             icone.classList.add('fa-regular');
             icone.classList.add('fa-clipboard');
             icone.classList.remove('fa-solid');
             icone.classList.remove('fa-clipboard-check');
-            icone.style.color = "#430199";
+            icone.classList.remove('copie');
         },5000)
     }
 
