@@ -57,8 +57,8 @@ function About() {
                 <p className="txt-apropos-p">{t("about.subtitle")}</p>
                 <div className="ligne ligne2"></div>
                 <div className="paragraphes-apropos">
-                    <p>{t("about.paragraphe.p1")} <a href="https://openclassrooms.com/fr/">Openclassroom</a>, {t("about.paragraphe.p2")} <a href="#projects">{t("about.paragraphe.link1")}</a> {lang === 'en' ? "section" : ""}.</p>
-                    <p>{t("about.paragraphe.p3")} <a href="https://linkedin.com/in/mahmoudou-abdoul-nganiyyou-2b805a180">Linkedin</a> {t("about.paragraphe.p4")} <a href="https://x.com/mahmoudouabdoul">Twitter</a> {t("about.paragraphe.p5")} <a href="#contact">{t("about.paragraphe.link2")}</a> {lang === 'en' ? "me" : ""}.</p>
+                    <p>{t("about.paragraphe.p1")} <a href="https://openclassrooms.com/fr/"  rel='noreferrer' target='_blank'>Openclassroom</a>, {t("about.paragraphe.p2")} <a href="#projects">{t("about.paragraphe.link1")}</a> {lang === 'en' ? "section" : ""}.</p>
+                    <p>{t("about.paragraphe.p3")} <a href="https://linkedin.com/in/mahmoudou-abdoul-nganiyyou-2b805a180"   rel='noreferrer' target='_blank'>Linkedin</a> {t("about.paragraphe.p4")} <a href="https://x.com/mahmoudouabdoul"  rel='noreferrer' target='_blank'>Twitter</a> {t("about.paragraphe.p5")} <a href="#contact">{t("about.paragraphe.link2")}</a> {lang === 'en' ? "me" : ""}.</p>
                 </div>
             </div>
             <svg id="skills" className="svg-curve svg-curve2" viewBox="0 0 1440 79" xmlns="http://www.w3.org/2000/svg">
