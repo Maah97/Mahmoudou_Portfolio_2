@@ -81,15 +81,15 @@ function Contact() {
     const form = useRef(); 
     const sendEmail = (e) => { 
         e.preventDefault();
-        // if (form.current.getElementById("email").value ===) {
-            
-        // }
-        console.log(form.current.getElementById("email").value);
+        if (form.current.querySelector('.name').value === "" || form.current.querySelector('.email').value === "" || form.current.querySelector('.title').value === "" || form.current.querySelector('.txtarea').value === "") {
+            return alert("Veuillez remplir tous les champs de chaisie pour envoyer le formulaire.");
+        }
+        console.log(form.current.querySelector('.name').value);
         
-         
         emailjs.sendForm('service_contact_portfoli', 'template_contact', form.current, 'BKhUj8nCOzHnCW6a7')
         .then((result) => { 
-            alert('message sent successfully...\n (Message envoyé avec succé)'); 
+            alert('message send successfully...\n(Message envoyé avec succé)'); 
+            console.log(result.text); 
             e.target.reset();
         }, 
         (error) => { 
@@ -115,19 +115,19 @@ function Contact() {
             <form ref={form} onSubmit={sendEmail} className="formulaire">
                 <div className="label-et-input">
                     <label htmlFor="name">{t("contact.form.name")}</label>
-                    <input name="name" id="name" type="text" placeholder={t("contact.form.phname")} />
+                    <input className="name" name="name" id="name" type="text" placeholder={t("contact.form.phname")} />
                 </div>
                 <div className="label-et-input">
                     <label htmlFor="email">Email</label>
-                    <input name="email" id="email" type="mail" placeholder={t("contact.form.phEmail")} />
+                    <input className="email" name="email" id="email" type="mail" placeholder={t("contact.form.phEmail")} />
                 </div>
                 <div className="label-et-input">
                     <label htmlFor="title">{t("contact.form.titleProject")}</label>
-                    <input name="title" id="title" type="text" placeholder={t("contact.form.phTitleProject")} />
+                    <input className="title" name="title" id="title" type="text" placeholder={t("contact.form.phTitleProject")} />
                 </div>
                 <div className="label-et-input">
                     <label htmlFor="message">Message</label>
-                    <textarea name="message" id="message" placeholder={t("contact.form.phMsg")}></textarea>
+                    <textarea className="txtarea" name="message" id="message" placeholder={t("contact.form.phMsg")}></textarea>
                 </div>
                 <input id="submit" type="submit" value={t("contact.form.submit")} />
             </form>
