@@ -89,7 +89,6 @@ function Contact() {
         emailjs.sendForm('service_contact_portfoli', 'template_contact', form.current, 'BKhUj8nCOzHnCW6a7')
         .then((result) => { 
             alert('message sent successfully...\n (Message envoyé avec succé)'); 
-            console.log(result.text); 
             e.target.reset();
         }, 
         (error) => { 
