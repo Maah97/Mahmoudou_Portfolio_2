@@ -80,12 +80,13 @@ function Contact() {
 
     const form = useRef(); 
     const sendEmail = (e) => { 
+        e.preventDefault();
         // if (form.current.getElementById("email").value ===) {
             
         // }
         console.log(form.current.getElementById("email").value);
         
-        e.preventDefault(); 
+         
         emailjs.sendForm('service_contact_portfoli', 'template_contact', form.current, 'BKhUj8nCOzHnCW6a7')
         .then((result) => { 
             alert('message sent successfully...\n (Message envoyé avec succé)'); 
