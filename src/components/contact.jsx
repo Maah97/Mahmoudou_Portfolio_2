@@ -84,8 +84,6 @@ function Contact() {
         if (form.current.querySelector('.name').value === "" || form.current.querySelector('.email').value === "" || form.current.querySelector('.title').value === "" || form.current.querySelector('.txtarea').value === "") {
             return alert("Veuillez remplir tous les champs de chaisie pour envoyer le formulaire.");
         }
-        console.log(form.current.querySelector('.name').value);
-        
         emailjs.sendForm('service_contact_portfoli', 'template_contact', form.current, 'BKhUj8nCOzHnCW6a7')
         .then((result) => { 
             alert('message send successfully...\n(Message envoyé avec succé)'); 
