@@ -102,7 +102,7 @@ function Contact() {
             <p className="paragraphe-contact-p">{t("contact.paragraphe")}</p>
             <div className="ligne ligne-contact2"></div>
             <h3 className="my-mail-title">{t("contact.email")}</h3>
-            <a className="my-mail-copie" onClick={()=>copie()}href="mailto:mahmoudouaboul@gmail.com">
+            <a className="my-mail-copie" onClick={()=>copie()} href="mailto:mahmoudouaboul@gmail.com">
                 <div className="adresse-mail">
                     <p id="mail">mahmoudouabdoul@gmail.com</p>
                     <i id="iconeCopie" className="fa-regular fa-clipboard"></i>
